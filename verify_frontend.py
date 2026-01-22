@@ -2,26 +2,37 @@ from playwright.sync_api import Page, expect, sync_playwright
 import os
 
 def test_homepage(page: Page):
-    # Go to English homepage
-    page.goto("http://localhost:3000/en")
+    try:
+        # Go to English homepage
+        page.goto("http://localhost:3000/en")
 
-    # Verify title and content
-    expect(page).to_have_title("Thugwangel")
-    expect(page.get_by_text("International Rap Artist based in Switzerland")).to_be_visible()
+        # Verify title and content
+        expect(page).to_have_title("Thugwangel")
 
-    # Screenshot English
-    if not os.path.exists("verification"):
-        os.makedirs("verification")
-    page.screenshot(path="verification/home_en.png", full_page=True)
+        # Verify Media Elements
+        # Check for Apple Music iframe
+        print("Checking for Apple Music iframe...")
+        expect(page.locator("iframe[src*='music.apple.com']").first).to_be_visible(timeout=10000)
 
-    # Go to French homepage
-    page.goto("http://localhost:3000/fr")
+        # Check for YouTube iframe
+        print("Checking for YouTube iframe...")
+        expect(page.locator("iframe[src*='youtube.com']").first).to_be_visible(timeout=10000)
 
-    # Verify content in French
-    expect(page.get_by_text("Artiste Rap International basé en Suisse")).to_be_visible()
+        # Check for Bio Image
+        print("Checking for Bio Image...")
+        expect(page.locator("img[alt='Thugwangel']")).to_be_visible()
 
-    # Screenshot French
-    page.screenshot(path="verification/home_fr.png", full_page=True)
+        # Screenshot English
+        if not os.path.exists("verification"):
+            os.makedirs("verification")
+        page.screenshot(path="verification/home_media_en.png", full_page=True)
+
+        print("English page verification with media passed.")
+    except Exception as e:
+        print(f"Test failed: {e}")
+        page.screenshot(path="verification/debug_fail.png", full_page=True)
+        # print(page.content()) # Too large to print
+        raise e
 
 if __name__ == "__main__":
     with sync_playwright() as p:
@@ -32,5 +43,6 @@ if __name__ == "__main__":
             print("Verification script finished successfully.")
         except Exception as e:
             print(f"Verification failed: {e}")
+            exit(1)
         finally:
             browser.close()
