@@ -1,0 +1,27 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "bio": "Bio",
+    "music": "Musique",
+    "videos": "Vidéos",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "tagline": "Artiste Rap International basé en Suisse"
+  },
+  "Bio": {
+    "title": "Biographie",
+    "content": "Thugwangel apporte un son unique du cœur de la Suisse au monde entier. Rappant en anglais, son style international mêle des rythmes profonds à une prouesse lyrique.",
+    "extra": "Né dans les montagnes, élevé aux rythmes. Thugwangel représente la nouvelle vague du hip-hop suisse, brisant les barrières avec des paroles en anglais qui résonnent mondialement."
+  },
+  "Contact": {
+    "title": "Contactez-nous",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer le message"
+  },
+  "Footer": {
+    "copyright": "Tous droits réservés."
+  }
+}

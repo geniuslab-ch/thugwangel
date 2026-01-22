@@ -1,0 +1,27 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "bio": "Bio",
+    "music": "Music",
+    "videos": "Videos",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "tagline": "International Rap Artist based in Switzerland"
+  },
+  "Bio": {
+    "title": "Biography",
+    "content": "Thugwangel brings a unique sound from the heart of Switzerland to the world. Rapping in English, his international style blends deep beats with lyrical prowess.",
+    "extra": "Born in the mountains, raised on the beats. Thugwangel represents the new wave of Swiss hip-hop, breaking barriers with English lyrics that resonate globally."
+  },
+  "Contact": {
+    "title": "Get in Touch",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message"
+  },
+  "Footer": {
+    "copyright": "All Rights Reserved."
+  }
+}
