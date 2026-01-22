@@ -10,22 +10,24 @@ export default function Music() {
   // To add your own music files:
   // 1. Prepare your MP3 files.
   // 2. Place them in the 'public/music/' folder.
-  // 3. Update the 'tracks' list below:
-  //    - title: The name of the song.
-  //    - artist: The artist name (e.g., Thugwangel).
-  //    - src: The path to the file (e.g., '/music/filename.mp3').
+  // 3. Rename your files to match the paths below (e.g., track_01.mp3, track_02.mp3...), OR update the code below to match your filenames.
+  //
+  // NOTE: If the file is too large to commit (e.g., >100MB, or >50MB depending on settings),
+  // you might need to use Git LFS or host them externally.
+  // For a standard website, MP3s should be around 3-10MB.
 
   const tracks = [
-    {
-      title: "Demo Track 1",
-      artist: "Thugwangel",
-      src: "/music/demo_track_1.mp3"
-    },
-    {
-        title: "Demo Track 2",
-        artist: "Thugwangel",
-        src: "/music/demo_track_2.mp3"
-    }
+    { title: "Song 1", artist: "Thugwangel", src: "/music/track_01.mp3" },
+    { title: "Song 2", artist: "Thugwangel", src: "/music/track_02.mp3" },
+    { title: "Song 3", artist: "Thugwangel", src: "/music/track_03.mp3" },
+    { title: "Song 4", artist: "Thugwangel", src: "/music/track_04.mp3" },
+    { title: "Song 5", artist: "Thugwangel", src: "/music/track_05.mp3" },
+    { title: "Song 6", artist: "Thugwangel", src: "/music/track_06.mp3" },
+    { title: "Song 7", artist: "Thugwangel", src: "/music/track_07.mp3" },
+    { title: "Song 8", artist: "Thugwangel", src: "/music/track_08.mp3" },
+    { title: "Song 9", artist: "Thugwangel", src: "/music/track_09.mp3" },
+    { title: "Song 10", artist: "Thugwangel", src: "/music/track_10.mp3" },
+    { title: "Song 11", artist: "Thugwangel", src: "/music/track_11.mp3" },
   ];
 
   return (

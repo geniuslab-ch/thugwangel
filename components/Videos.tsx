@@ -5,25 +5,26 @@ import { useTranslations } from 'next-intl';
 export default function Videos() {
   const t = useTranslations('Navigation');
 
-  // INSTRUCTIONS FOR USER:
-  // To add your own YouTube videos:
-  // 1. Go to your video on YouTube.
-  // 2. Click Share -> Embed.
-  // 3. Copy the 'src' URL (e.g., https://www.youtube.com/embed/VIDEO_ID).
-  // 4. Update the 'embedUrl' in the list below.
-
   const videoItems = [
     {
         id: 1,
-        title: "Latest Visuals",
-        // Placeholder. Replace with your video ID.
-        embedUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ" // Rick Roll - Classic placeholder that is guaranteed to work
+        title: "Latest Visuals I",
+        embedUrl: "https://www.youtube.com/embed/caw4j4-tW_0?si=grdcC9J4CvoHWanX"
     },
     {
         id: 2,
-        title: "Live Performance",
-        // Placeholder.
-        embedUrl: "https://www.youtube.com/embed/5qap5aO4i9A" // lofi hip hop radio - beats to relax/study to (always live or available)
+        title: "Latest Visuals II",
+        embedUrl: "https://www.youtube.com/embed/dC9V6jDHkmQ?si=0YZaD4EmyT4ZdhCQ"
+    },
+    {
+        id: 3,
+        title: "Latest Visuals III",
+        embedUrl: "https://www.youtube.com/embed/6xzEoAtL-JA?si=bd9T4ewt7mmYWe2n"
+    },
+    {
+        id: 4,
+        title: "Latest Visuals IV",
+        embedUrl: "https://www.youtube.com/embed/qX7zkkMJxs4?si=5sIhxq-1YlY3xjKC"
     }
   ];
 

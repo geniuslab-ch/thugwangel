@@ -22,6 +22,7 @@ export default function Navigation() {
     { name: t('bio'), href: '#bio' },
     { name: t('music'), href: '#music' },
     { name: t('videos'), href: '#videos' },
+    { name: t('gallery'), href: '#gallery' },
     { name: t('contact'), href: '#contact' },
   ];
 
