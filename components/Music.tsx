@@ -1,31 +1,30 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import AudioPlayer from './AudioPlayer';
 
 export default function Music() {
   const t = useTranslations('Navigation');
 
   // INSTRUCTIONS FOR USER:
-  // To add your own Apple Music songs/albums:
-  // 1. Go to your song/album on music.apple.com
-  // 2. Click the three dots (...) -> Share -> Copy Embed Code
-  // 3. Extract the 'src' URL from the code (starts with https://embed.music.apple.com...)
-  // 4. Update the 'embedUrl' in the list below.
+  // To add your own music files:
+  // 1. Prepare your MP3 files.
+  // 2. Place them in the 'public/music/' folder.
+  // 3. Update the 'tracks' list below:
+  //    - title: The name of the song.
+  //    - artist: The artist name (e.g., Thugwangel).
+  //    - src: The path to the file (e.g., '/music/filename.mp3').
 
-  const musicItems = [
+  const tracks = [
     {
-      id: 1,
-      title: "Latest Release",
-      // Placeholder ID. Replace with your actual Apple Music Embed URL.
-      embedUrl: "https://embed.music.apple.com/us/album/illmatic/868691276?i=868691281",
-      height: "175"
+      title: "Demo Track 1",
+      artist: "Thugwangel",
+      src: "/music/demo_track_1.mp3"
     },
     {
-        id: 2,
-        title: "Top Hit",
-        // Placeholder ID.
-        embedUrl: "https://embed.music.apple.com/us/album/ready-to-die-the-remaster/204669326?i=204669330",
-        height: "175"
+        title: "Demo Track 2",
+        artist: "Thugwangel",
+        src: "/music/demo_track_2.mp3"
     }
   ];
 
@@ -34,28 +33,18 @@ export default function Music() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent uppercase tracking-widest">{t('music')}</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
-            {musicItems.map((item) => (
-                <div key={item.id} className="w-full max-w-md bg-primary/5 border border-primary/20 p-4 rounded-lg">
-                    <h3 className="text-xl font-bold text-white mb-4 text-center">{item.title}</h3>
-                    <div className="w-full overflow-hidden rounded-md">
-                        <iframe
-                            allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
-                            frameBorder="0"
-                            height={item.height}
-                            style={{width: '100%', maxWidth: '660px', overflow: 'hidden', background: 'transparent'}}
-                            sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-                            src={item.embedUrl}>
-                        </iframe>
-                    </div>
-                </div>
-            ))}
-        </div>
+        <div className="flex flex-col items-center justify-center">
+            <p className="text-gray-400 mb-8 text-center max-w-2xl">
+                Listen to the latest tracks directly from the source.
+            </p>
 
-         <div className="mt-12 text-center">
-            <a href="https://music.apple.com" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-colors font-bold tracking-widest uppercase text-sm">
-                Stream on Apple Music
-            </a>
+            <AudioPlayer tracks={tracks} />
+
+             <div className="mt-12 text-center">
+                <p className="text-xs text-gray-500 uppercase tracking-widest">
+                    Exclusive Web Player
+                </p>
+            </div>
         </div>
       </div>
     </section>
