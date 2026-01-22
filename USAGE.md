@@ -37,6 +37,29 @@ Rename them exactly as follows:
 Place your main artist photo in `public/images/` and name it:
 - `artist.png`
 
+---
+
+## How to Run & Deploy / Comment Lancer et Déployer
+
+You asked: *"Where do I run `npm run dev`? I use GitHub and Vercel."*
+
+### Scenario A: You are working on your own computer (Local)
+If you have downloaded the code to your computer to make changes:
+1.  Open your **Terminal** (Mac/Linux) or **Command Prompt/PowerShell** (Windows).
+2.  Navigate to the project folder (`cd path/to/folder`).
+3.  Type `npm install` (only the first time).
+4.  Type `npm run dev`.
+5.  Open your browser to `http://localhost:3000`.
+
+### Scenario B: You are using GitHub & Vercel (Cloud)
+**You do NOT need to type `npm run dev`.**
+1.  Make your changes to the files (e.g., uploading the music/images).
+2.  **Commit and Push** these changes to your GitHub repository.
+3.  **Vercel** is connected to your GitHub. It will see the new code, automatically run the build command, and update the website.
+4.  Just wait a minute or two, then check your website URL.
+
+---
+
 ## Updates Made
 - **Videos:** Updated the Videos section with the 4 YouTube links you provided.
 - **Gallery:** Added a new "Gallery" section to the homepage and navigation.
