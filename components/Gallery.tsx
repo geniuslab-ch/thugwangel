@@ -1,12 +1,12 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+// import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export default function Gallery() {
-  const t = useTranslations('Navigation');
+  // const t = useTranslations('Navigation');
 
   // Generating the array of images
   const images = Array.from({ length: 12 }, (_, i) => ({

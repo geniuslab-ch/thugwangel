@@ -14,6 +14,7 @@ export default function Navigation() {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const changeLanguage = (locale: string) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     router.replace(pathname, {locale: locale as any});
   };
 

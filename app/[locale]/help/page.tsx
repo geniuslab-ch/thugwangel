@@ -20,9 +20,9 @@ export default function HelpPage() {
             <p><strong>Step 1: Push to GitHub</strong><br/>Ensure your code is pushed to a GitHub repository.</p>
             <p><strong>Step 2: Deploy on Vercel</strong><br/>
             1. Go to Vercel.com and sign up/log in.<br/>
-            2. Click "Add New..." &gt; "Project".<br/>
+            2. Click &quot;Add New...&quot; &gt; &quot;Project&quot;.<br/>
             3. Import your GitHub repository.<br/>
-            4. Click "Deploy".</p>
+            4. Click &quot;Deploy&quot;.</p>
             <p><strong>Step 3: Connect Custom Domain (thug-angel.ch)</strong><br/>
             1. Once deployed, go to Settings &gt; Domains.<br/>
             2. Enter <code>thug-angel.ch</code> and click Add.<br/>
@@ -34,9 +34,9 @@ export default function HelpPage() {
             <p><strong>Étape 1 : Pousser vers GitHub</strong><br/>Assurez-vous que votre code est sur un dépôt GitHub.</p>
             <p><strong>Étape 2 : Déployer sur Vercel</strong><br/>
             1. Allez sur Vercel.com.<br/>
-            2. "Add New..." &gt; "Project".<br/>
+            2. &quot;Add New...&quot; &gt; &quot;Project&quot;.<br/>
             3. Importez votre dépôt.<br/>
-            4. Cliquez sur "Deploy".</p>
+            4. Cliquez sur &quot;Deploy&quot;.</p>
             <p><strong>Étape 3 : Connecter le Domaine (thug-angel.ch)</strong><br/>
             1. Allez dans Settings &gt; Domains.<br/>
             2. Ajoutez <code>thug-angel.ch</code>.<br/>

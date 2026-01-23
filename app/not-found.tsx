@@ -10,7 +10,7 @@ export default function GlobalNotFound() {
               The page you are looking for does not exist.
             </p>
             <p className="text-gray-500 text-sm italic">
-              La page que vous recherchez n'existe pas.
+              La page que vous recherchez n&apos;existe pas.
             </p>
 
             <div className="pt-8">
@@ -18,7 +18,7 @@ export default function GlobalNotFound() {
                 href="/"
                 className="inline-block px-8 py-3 bg-burgundy hover:bg-red-900 text-white rounded-full transition-colors duration-300 font-medium"
               >
-                Return Home / Retour à l'accueil
+                Return Home / Retour à l&apos;accueil
               </Link>
             </div>
         </div>

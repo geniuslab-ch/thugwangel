@@ -23,7 +23,7 @@ export default function AudioPlayer({ tracks }: AudioPlayerProps) {
   const [isMuted, setIsMuted] = useState(false);
 
   const audioRef = useRef<HTMLAudioElement>(null);
-  const progressBarRef = useRef<HTMLInputElement>(null);
+  // const progressBarRef = useRef<HTMLInputElement>(null);
 
   const currentTrack = tracks[currentTrackIndex];
 
