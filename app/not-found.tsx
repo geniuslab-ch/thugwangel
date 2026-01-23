@@ -1,21 +1,8 @@
 import Link from 'next/link';
-import "./globals.css";
-import { Geist, Geist_Mono } from "next/font/google";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function GlobalNotFound() {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black text-white h-screen flex flex-col items-center justify-center p-4`}>
+    <div className="bg-black text-white min-h-[60vh] flex flex-col items-center justify-center p-4">
         <div className="text-center space-y-6 max-w-md">
             <h1 className="text-6xl font-bold text-burgundy">404</h1>
             <h2 className="text-2xl font-semibold">Page Not Found / Page Non Trouvée</h2>
@@ -35,7 +22,6 @@ export default function GlobalNotFound() {
               </Link>
             </div>
         </div>
-      </body>
-    </html>
+    </div>
   );
 }
