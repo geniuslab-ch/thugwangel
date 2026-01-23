@@ -2,20 +2,27 @@
 
 import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function Hero() {
   const t = useTranslations('Hero');
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-primary/20 to-black z-0" />
-
-      {/* Abstract shapes or placeholder for artist image */}
-      <div className="absolute inset-0 z-0 opacity-20">
-         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary rounded-full blur-3xl filter mix-blend-screen animate-pulse" />
-         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent rounded-full blur-3xl filter mix-blend-screen animate-pulse" style={{ animationDelay: '2s' }} />
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+         <Image
+            src="/images/gallery_06.jpg"
+            alt="Thugwangel Hero Background"
+            fill
+            className="object-cover opacity-60"
+            priority
+            unoptimized
+         />
       </div>
+
+      {/* Background with gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black z-0" />
 
       <div className="relative z-10 text-center px-4">
         <motion.h1

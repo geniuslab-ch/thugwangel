@@ -17,17 +17,17 @@ export default function Music() {
   // For a standard website, MP3s should be around 3-10MB.
 
   const tracks = [
-    { title: "Song 1", artist: "Thugwangel", src: "/music/track_01.mp3" },
-    { title: "Song 2", artist: "Thugwangel", src: "/music/track_02.mp3" },
-    { title: "Song 3", artist: "Thugwangel", src: "/music/track_03.mp3" },
-    { title: "Song 4", artist: "Thugwangel", src: "/music/track_04.mp3" },
-    { title: "Song 5", artist: "Thugwangel", src: "/music/track_05.mp3" },
-    { title: "Song 6", artist: "Thugwangel", src: "/music/track_06.mp3" },
-    { title: "Song 7", artist: "Thugwangel", src: "/music/track_07.mp3" },
-    { title: "Song 8", artist: "Thugwangel", src: "/music/track_08.mp3" },
-    { title: "Song 9", artist: "Thugwangel", src: "/music/track_09.mp3" },
-    { title: "Song 10", artist: "Thugwangel", src: "/music/track_10.mp3" },
-    { title: "Song 11", artist: "Thugwangel", src: "/music/track_11.mp3" },
+    { title: "Cheating Cheating Lior", artist: "Thugwangel", src: "/music/track_01.mp3" },
+    { title: "Digital Maze", artist: "Thugwangel", src: "/music/track_02.mp3" },
+    { title: "Paisa 247", artist: "Thugwangel", src: "/music/track_03.mp3" },
+    { title: "Rack 12", artist: "Thugwangel", src: "/music/track_04.mp3" },
+    { title: "Rhyme Gring", artist: "Thugwangel", src: "/music/track_05.mp3" },
+    { title: "Too Late To", artist: "Thugwangel", src: "/music/track_06.mp3" }, // Fixed "To late to" typo -> "Too Late To" (assumption, looks like a typo)
+    { title: "The M", artist: "Thugwangel", src: "/music/track_07.mp3" },
+    { title: "Silent Observer", artist: "Thugwangel", src: "/music/track_08.mp3" },
+    { title: "Shopify Song", artist: "Thugwangel", src: "/music/track_09.mp3" },
+    { title: "Onward", artist: "Thugwangel", src: "/music/track_10.mp3" },
+    { title: "Come To Me", artist: "Thugwangel", src: "/music/track_11.mp3" },
   ];
 
   return (
