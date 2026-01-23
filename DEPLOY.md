@@ -26,6 +26,13 @@ Since you are managing media files manually (as per `USAGE.md`):
 - If they were too large for GitHub, you might need to use **Git LFS** (Large File Storage) or upload them to a storage service (like AWS S3) and update the code to point there.
 - **For Vercel**: If the total size of your build (including static files) exceeds 250MB (Free tier), you may face issues. In that case, hosting media externally is recommended.
 
+### Troubleshooting
+**"404 Not Found" after connecting domain:**
+If you see a 404 error on your domain (`thug-angel.ch`) and you saw a "DNS check" on GitHub:
+- **Do NOT configure the domain in GitHub Pages settings.** This will point your domain to GitHub's servers, which do not have your Vercel app.
+- You must configure the domain in **Vercel** (Step 3 above).
+- If you accidentally configured it on GitHub, remove the custom domain from your GitHub repository settings ("Pages" section) and ensure your DNS records point to Vercel.
+
 ---
 
 ## Français
@@ -53,3 +60,10 @@ Comme vous gérez les fichiers médias manuellement (selon `USAGE.md`) :
 - Assurez-vous que les dossiers `public/music/` et `public/images/` contenant vos fichiers sont bien inclus dans votre dépôt GitHub.
 - S'ils sont trop volumineux pour GitHub, vous devrez peut-être utiliser **Git LFS** ou héberger les fichiers ailleurs (ex: AWS S3).
 - **Pour Vercel** : Si la taille totale dépasse 250MB (version gratuite), vous pourriez avoir des problèmes. Dans ce cas, l'hébergement externe des médias est recommandé.
+
+### Dépannage
+**Erreur "404 Not Found" après avoir connecté le domaine :**
+Si vous voyez une erreur 404 sur votre domaine (`thug-angel.ch`) et que vous avez vu une "vérification DNS" sur GitHub :
+- **Ne configurez PAS le domaine dans les paramètres GitHub Pages.** Cela pointera votre domaine vers les serveurs de GitHub, qui ne contiennent pas votre application Vercel.
+- Vous devez configurer le domaine dans **Vercel** (Étape 3 ci-dessus).
+- Si vous l'avez configuré par erreur sur GitHub, retirez le domaine personnalisé des paramètres de votre dépôt GitHub (section "Pages") et assurez-vous que vos enregistrements DNS pointent vers Vercel.
