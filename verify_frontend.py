@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, expect, sync_playwright
 import os
+import re
 
 def test_homepage(page: Page):
     try:
@@ -34,6 +35,10 @@ def test_homepage(page: Page):
         expect(page.locator("#gallery")).to_be_visible()
         # Should have 12 images (even if broken, the img tag exists)
         expect(page.locator("#gallery img")).to_have_count(12)
+        # Verify at least one image has the correct .png extension in its src
+        # Note: Next.js Image component modifies src, but it should still contain the original filename or path
+        first_gallery_img = page.locator("#gallery img").first
+        expect(first_gallery_img).to_have_attribute("src", re.compile(r"gallery_01\.png"))
 
         # Verify Contact Section (Updated)
         print("Checking for Contact Section...")

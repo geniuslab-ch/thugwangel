@@ -26,12 +26,12 @@ Rename them exactly as follows so the player can find them:
 Go to the `public/images/` folder. You need to add 12 images.
 Rename them exactly as follows:
 
-- `gallery_01.jpeg`
-- `gallery_02.jpeg`
+- `gallery_01.png`
+- `gallery_02.png`
 - ...
-- `gallery_12.jpeg`
+- `gallery_12.png`
 
-(Note: If you use `.jpg` or `.png`, you will need to update `components/Gallery.tsx` to look for those extensions instead of `.jpeg`).
+(Note: The gallery component specifically looks for `.png` extensions. If you use `.jpg`, you will need to update `components/Gallery.tsx`).
 
 ### 3. Artist Bio Image
 Place your main artist photo in `public/images/` and name it:

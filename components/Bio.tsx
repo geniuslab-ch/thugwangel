@@ -14,7 +14,7 @@ export default function Bio() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-[3/4] w-full max-w-md mx-auto justify-self-center md:justify-self-end border-2 border-primary/20 rounded-lg overflow-hidden shadow-2xl shadow-primary/10">
                 <Image
-                    src="/images/gallery_11.jpeg"
+                    src="/images/gallery_11.png"
                     alt="Thugwangel"
                     fill
                     className="object-cover"
