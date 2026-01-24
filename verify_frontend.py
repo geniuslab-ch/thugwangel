@@ -17,13 +17,13 @@ def test_homepage(page: Page):
         expect(page.locator("audio")).to_be_attached()
         expect(page.locator("button[aria-label='Play']")).to_be_visible()
 
-        # Check for Track Title "Song 1"
-        expect(page.get_by_text("Song 1").first).to_be_visible()
+        # Check for Track Title "Cheating Cheating Lior"
+        expect(page.get_by_text("Cheating Cheating Lior").first).to_be_visible()
 
         # Check for Playlist presence and other songs
         expect(page.get_by_text("Playlist", exact=True)).to_be_visible()
-        expect(page.get_by_text("Song 2")).to_be_visible()
-        expect(page.get_by_text("Song 11")).to_be_visible() # Check for the last song
+        expect(page.get_by_text("Digital Maze")).to_be_visible()
+        expect(page.get_by_text("Come To Me")).to_be_visible() # Check for the last song
 
         # Verify YouTube iframe (updated specific ID)
         print("Checking for YouTube iframe...")
