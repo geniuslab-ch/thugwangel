@@ -12,19 +12,14 @@ export default function Bio() {
         <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-accent uppercase tracking-widest">{t('title')}</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            {/*
-              IMAGE INSTRUCTIONS:
-              1. Add your photo to the 'public/images' folder.
-              2. Rename it to 'artist.png' (or change the src below).
-              3. Adjust width/height if necessary.
-            */}
             <div className="relative aspect-[3/4] w-full max-w-md mx-auto justify-self-center md:justify-self-end border-2 border-primary/20 rounded-lg overflow-hidden shadow-2xl shadow-primary/10">
                 <Image
-                    src="/images/artist.png"
+                    src="/images/gallery_11.jpg"
                     alt="Thugwangel"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    unoptimized
                 />
             </div>
 
