@@ -33,8 +33,14 @@ def test_homepage(page: Page):
         print("Checking for Gallery...")
         expect(page.locator("#gallery")).to_be_visible()
         # Should have 12 images (even if broken, the img tag exists)
-        # Note: We used unoptimized images so they are simple img tags
         expect(page.locator("#gallery img")).to_have_count(12)
+
+        # Verify Contact Section (Updated)
+        print("Checking for Contact Section...")
+        expect(page.locator("#contact")).to_be_visible()
+        # expect(page.get_by_role("link", name="info@thug-angel.ch")).to_be_visible()
+        expect(page.locator("a[href='mailto:info@thug-angel.ch']")).to_be_visible()
+        expect(page.locator("form")).not_to_be_visible() # Ensure form is gone
 
         # Verify Bio Image
         print("Checking for Bio Image...")

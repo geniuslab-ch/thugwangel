@@ -2,21 +2,31 @@
 > thugwangel@0.1.0 dev
 > next dev
 
-⚠ Port 3000 is in use by an unknown process, using available port 3001 instead.
 ▲ Next.js 16.1.4 (Turbopack)
-- Local:         http://localhost:3001
-- Network:       http://192.168.0.2:3001
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
 
 ✓ Starting...
 ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
-✓ Ready in 1208ms
-○ Compiling /[locale] ...
- GET /en 200 in 8.5s (compile: 7.6s, proxy.ts: 151ms, render: 738ms)
- GET /images/gallery_03.jpeg 404 in 2.4s (compile: 1338ms, render: 1025ms)
- GET /images/gallery_02.jpeg 404 in 2.7s (compile: 1797ms, render: 873ms)
- GET /images/gallery_11.jpeg 404 in 2.7s (compile: 1907ms, render: 798ms)
- GET /images/gallery_01.jpeg 404 in 2.7s (compile: 2.0s, render: 697ms)
- GET /images/gallery_06.jpeg 404 in 3.1s (compile: 2.5s, render: 654ms)
- GET /images/gallery_04.jpeg 404 in 209ms (compile: 13ms, render: 197ms)
- GET /images/gallery_07.jpeg 404 in 208ms (compile: 60ms, render: 148ms)
- GET /images/gallery_05.jpeg 404 in 214ms (compile: 35ms, render: 179ms)
+✓ Ready in 2.6s
+Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for locale `en`.
+    at Contact (components/Contact.tsx:15:18)
+  13 |         <div className="flex flex-col items-center space-y-8">
+  14 |             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
+> 15 |                 {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+     |                  ^
+  16 |             </p>
+  17 |
+  18 |             <a  {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Contact.content` in messages for locale `en`.'
+}
+ GET /en 200 in 3.5s (compile: 2.7s, proxy.ts: 139ms, render: 627ms)
+ GET /images/gallery_06.jpeg 404 in 649ms (compile: 222ms, render: 426ms)
+ GET /images/gallery_11.jpeg 404 in 299ms (compile: 31ms, render: 267ms)
+ GET /images/gallery_03.jpeg 404 in 256ms (compile: 125ms, render: 132ms)
+ GET /images/gallery_02.jpeg 404 in 259ms (compile: 100ms, render: 159ms)
+ GET /images/gallery_01.jpeg 404 in 317ms (compile: 110ms, render: 206ms)
+ GET /images/gallery_04.jpeg 404 in 316ms (compile: 26ms, render: 290ms)
+ GET /images/gallery_07.jpeg 404 in 311ms (compile: 229ms, render: 82ms)
+ GET /images/gallery_05.jpeg 404 in 318ms (compile: 129ms, render: 189ms)
