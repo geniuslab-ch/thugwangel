@@ -73,3 +73,26 @@ Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for loca
  GET /images/gallery_07.png 404 in 247ms (compile: 30ms, render: 216ms)
  GET /images/gallery_05.png 404 in 247ms (compile: 74ms, render: 173ms)
  GET /images/gallery_04.png 404 in 252ms (compile: 107ms, render: 145ms)
+✓ Compiled in 3.2s
+Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for locale `en`.
+    at Contact (components/Contact.tsx:15:18)
+  13 |         <div className="flex flex-col items-center space-y-8">
+  14 |             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
+> 15 |                 {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+     |                  ^
+  16 |             </p>
+  17 |
+  18 |             <a  {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Contact.content` in messages for locale `en`.'
+}
+ GET /en 200 in 4.8s (compile: 2.0s, proxy.ts: 271ms, render: 2.5s)
+ GET /images/gallery_06.png 404 in 236ms (compile: 51ms, render: 185ms)
+ GET /images/gallery_11.png 404 in 446ms (compile: 32ms, render: 414ms)
+ GET /images/gallery_01.png 404 in 449ms (compile: 32ms, render: 417ms)
+ GET /images/gallery_03.png 404 in 443ms (compile: 87ms, render: 356ms)
+ GET /images/gallery_02.png 404 in 451ms (compile: 56ms, render: 395ms)
+ GET /images/gallery_04.png 404 in 284ms (compile: 53ms, render: 231ms)
+ GET /images/gallery_05.png 404 in 269ms (compile: 97ms, render: 172ms)
+ GET /images/gallery_06.png 404 in 256ms (compile: 112ms, render: 144ms)
+ GET /images/gallery_07.png 404 in 255ms (compile: 133ms, render: 122ms)

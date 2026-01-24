@@ -3,25 +3,23 @@
 // import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export default function Gallery() {
   // const t = useTranslations('Navigation');
 
   // Generating the array of images
+  // Filter out images 8, 9, 10 as requested
+  const excludedIds = [8, 9, 10];
   const images = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
     src: `/images/gallery_${String(i + 1).padStart(2, '0')}.png`,
     alt: `Thugwangel Gallery Image ${i + 1}`
-  }));
+  })).filter(img => !excludedIds.includes(img.id));
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  // Default to 1 item per view for mobile, will adjust based on screen size in logic below if needed,
-  // but for a simple slider, showing one prominent image or a few is good.
-  // Let's go with a responsive carousel that shows 1 on mobile, 2 on tablet, 3 on desktop?
-  // Or just a simple single slide for maximum impact as requested ("slider instead of grid").
-  // Often artists prefer a large single slider or a partial view.
-  // Let's implement a "center mode" style slider or just a simple one.
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   // Responsive items per view
   const [itemsPerView, setItemsPerView] = useState(1);
@@ -38,16 +36,10 @@ export default function Gallery() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  // To allow infinite scroll feeling, we might need more complex logic,
-  // but let's stick to a simple scroll first.
-  // Actually, standard carousel behavior usually loops.
-
   const handleNext = () => {
       setCurrentIndex((prev) => {
           const nextIndex = prev + 1;
-          // If we reach the end where we can't show 'itemsPerView' fully,
-          // we typically either loop back to 0 or stop.
-          // Let's loop back to 0 for a continuous feel
+          // Loop logic: if we go past valid start indices, reset to 0
           if (nextIndex > images.length - itemsPerView) return 0;
           return nextIndex;
       });
@@ -56,7 +48,7 @@ export default function Gallery() {
   const handlePrev = () => {
     setCurrentIndex((prev) => {
         const nextIndex = prev - 1;
-        if (nextIndex < 0) return images.length - itemsPerView;
+        if (nextIndex < 0) return Math.max(0, images.length - itemsPerView);
         return nextIndex;
     });
   };
@@ -77,8 +69,9 @@ export default function Gallery() {
                     {images.map((item) => (
                         <div
                             key={item.id}
-                            className="flex-shrink-0 px-2"
+                            className="flex-shrink-0 px-2 cursor-pointer"
                             style={{ width: `${100 / itemsPerView}%` }}
+                            onClick={() => setSelectedImage(item.src)}
                         >
                             <div className="relative aspect-[3/4] md:aspect-square bg-gray-900 border border-primary/20 rounded-lg overflow-hidden group/item">
                                 <Image
@@ -89,6 +82,9 @@ export default function Gallery() {
                                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                     unoptimized
                                 />
+                                <div className="absolute inset-0 bg-black/0 group-hover/item:bg-black/20 transition-colors flex items-center justify-center opacity-0 group-hover/item:opacity-100">
+                                    <span className="text-white bg-black/50 px-3 py-1 rounded-full text-sm backdrop-blur-sm border border-white/20">Expand</span>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -112,9 +108,9 @@ export default function Gallery() {
                 <ChevronRight size={24} />
             </button>
 
-            {/* Dots Indicators */}
-            <div className="flex justify-center mt-8 gap-2">
-                {Array.from({ length: images.length - itemsPerView + 1 }).map((_, idx) => (
+            {/* Dots Indicators - limited to valid start positions to avoid too many dots if list is long */}
+            <div className="flex justify-center mt-8 gap-2 flex-wrap px-4">
+                {Array.from({ length: Math.max(1, images.length - itemsPerView + 1) }).map((_, idx) => (
                     <button
                         key={idx}
                         onClick={() => setCurrentIndex(idx)}
@@ -128,6 +124,36 @@ export default function Gallery() {
 
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      <AnimatePresence>
+        {selectedImage && (
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 p-4"
+                onClick={() => setSelectedImage(null)}
+            >
+                <button
+                    onClick={() => setSelectedImage(null)}
+                    className="absolute top-4 right-4 text-white hover:text-accent p-2 z-50"
+                >
+                    <X size={40} />
+                </button>
+
+                <div className="relative w-full h-full max-w-5xl max-h-[90vh] flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
+                    <Image
+                        src={selectedImage}
+                        alt="Gallery Fullscreen"
+                        fill
+                        className="object-contain"
+                        unoptimized
+                    />
+                </div>
+            </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

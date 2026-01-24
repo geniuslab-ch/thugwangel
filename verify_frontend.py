@@ -33,8 +33,9 @@ def test_homepage(page: Page):
         # Verify Gallery
         print("Checking for Gallery...")
         expect(page.locator("#gallery")).to_be_visible()
-        # Should have 12 images (even if broken, the img tag exists)
-        expect(page.locator("#gallery img")).to_have_count(12)
+        # Should have 9 images now (12 - 3 excluded)
+        # Note: The carousel renders all images in the flex container
+        expect(page.locator("#gallery img")).to_have_count(9)
         # Verify at least one image has the correct .png extension in its src
         # Note: Next.js Image component modifies src, but it should still contain the original filename or path
         first_gallery_img = page.locator("#gallery img").first
