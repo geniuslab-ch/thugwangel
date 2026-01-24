@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
          <Image
-            src="/images/gallery_06.jpg"
+            src="/images/gallery_06.png"
             alt="Thugwangel Hero Background"
             fill
             className="object-cover opacity-60"

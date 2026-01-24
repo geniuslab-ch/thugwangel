@@ -1,14 +1,75 @@
 
-> thugwangel@0.1.0 start
-> next start
+> thugwangel@0.1.0 dev
+> next dev
 
-⨯ Failed to start server
-Error: listen EADDRINUSE: address already in use :::3000
-    at <unknown> (Error: listen EADDRINUSE: address already in use :::3000)
-    at new Promise (<anonymous>) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '::',
-  port: 3000
+▲ Next.js 16.1.4 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.0.2:3000
+
+✓ Starting...
+⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+✓ Ready in 2.6s
+Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for locale `en`.
+    at Contact (components/Contact.tsx:15:18)
+  13 |         <div className="flex flex-col items-center space-y-8">
+  14 |             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
+> 15 |                 {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+     |                  ^
+  16 |             </p>
+  17 |
+  18 |             <a  {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Contact.content` in messages for locale `en`.'
 }
+ GET /en 200 in 3.5s (compile: 2.7s, proxy.ts: 139ms, render: 627ms)
+ GET /images/gallery_06.jpeg 404 in 649ms (compile: 222ms, render: 426ms)
+ GET /images/gallery_11.jpeg 404 in 299ms (compile: 31ms, render: 267ms)
+ GET /images/gallery_03.jpeg 404 in 256ms (compile: 125ms, render: 132ms)
+ GET /images/gallery_02.jpeg 404 in 259ms (compile: 100ms, render: 159ms)
+ GET /images/gallery_01.jpeg 404 in 317ms (compile: 110ms, render: 206ms)
+ GET /images/gallery_04.jpeg 404 in 316ms (compile: 26ms, render: 290ms)
+ GET /images/gallery_07.jpeg 404 in 311ms (compile: 229ms, render: 82ms)
+ GET /images/gallery_05.jpeg 404 in 318ms (compile: 129ms, render: 189ms)
+Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for locale `en`.
+    at Contact (components/Contact.tsx:15:18)
+  13 |         <div className="flex flex-col items-center space-y-8">
+  14 |             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
+> 15 |                 {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+     |                  ^
+  16 |             </p>
+  17 |
+  18 |             <a  {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Contact.content` in messages for locale `en`.'
+}
+ GET /en 200 in 1650ms (compile: 474ms, proxy.ts: 256ms, render: 920ms)
+ GET /images/gallery_06.jpeg 404 in 258ms (compile: 79ms, render: 178ms)
+ GET /images/gallery_11.jpeg 404 in 482ms (compile: 84ms, render: 398ms)
+ GET /images/gallery_01.jpeg 404 in 439ms (compile: 112ms, render: 326ms)
+ GET /images/gallery_02.jpeg 404 in 352ms (compile: 121ms, render: 232ms)
+ GET /images/gallery_03.jpeg 404 in 275ms (compile: 178ms, render: 97ms)
+ GET /images/gallery_06.jpeg 404 in 250ms (compile: 82ms, render: 168ms)
+ GET /images/gallery_05.jpeg 404 in 252ms (compile: 65ms, render: 188ms)
+ GET /images/gallery_04.jpeg 404 in 257ms (compile: 41ms, render: 216ms)
+ GET /images/gallery_07.jpeg 404 in 251ms (compile: 139ms, render: 112ms)
+Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for locale `en`.
+    at Contact (components/Contact.tsx:15:18)
+  13 |         <div className="flex flex-col items-center space-y-8">
+  14 |             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
+> 15 |                 {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+     |                  ^
+  16 |             </p>
+  17 |
+  18 |             <a  {
+  code: 'MISSING_MESSAGE',
+  originalMessage: 'Could not resolve `Contact.content` in messages for locale `en`.'
+}
+ GET /en 200 in 2.9s (compile: 694ms, proxy.ts: 183ms, render: 2.0s)
+ GET /images/gallery_06.png 404 in 291ms (compile: 61ms, render: 230ms)
+ GET /images/gallery_11.png 404 in 370ms (compile: 97ms, render: 273ms)
+ GET /images/gallery_01.png 404 in 348ms (compile: 120ms, render: 227ms)
+ GET /images/gallery_02.png 404 in 335ms (compile: 132ms, render: 203ms)
+ GET /images/gallery_03.png 404 in 296ms (compile: 216ms, render: 80ms)
+ GET /images/gallery_07.png 404 in 247ms (compile: 30ms, render: 216ms)
+ GET /images/gallery_05.png 404 in 247ms (compile: 74ms, render: 173ms)
+ GET /images/gallery_04.png 404 in 252ms (compile: 107ms, render: 145ms)

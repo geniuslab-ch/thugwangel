@@ -11,7 +11,7 @@ export default function Gallery() {
   // Generating the array of images
   const images = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
-    src: `/images/gallery_${String(i + 1).padStart(2, '0')}.jpg`,
+    src: `/images/gallery_${String(i + 1).padStart(2, '0')}.png`,
     alt: `Thugwangel Gallery Image ${i + 1}`
   }));
 

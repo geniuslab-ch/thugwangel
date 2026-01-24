@@ -1,5 +1,6 @@
 from playwright.sync_api import Page, expect, sync_playwright
 import os
+import re
 
 def test_homepage(page: Page):
     try:
@@ -17,13 +18,13 @@ def test_homepage(page: Page):
         expect(page.locator("audio")).to_be_attached()
         expect(page.locator("button[aria-label='Play']")).to_be_visible()
 
-        # Check for Track Title "Song 1"
-        expect(page.get_by_text("Song 1").first).to_be_visible()
+        # Check for Track Title "Cheating Cheating Lior"
+        expect(page.get_by_text("Cheating Cheating Lior").first).to_be_visible()
 
         # Check for Playlist presence and other songs
         expect(page.get_by_text("Playlist", exact=True)).to_be_visible()
-        expect(page.get_by_text("Song 2")).to_be_visible()
-        expect(page.get_by_text("Song 11")).to_be_visible() # Check for the last song
+        expect(page.get_by_text("Digital Maze")).to_be_visible()
+        expect(page.get_by_text("Come To Me")).to_be_visible() # Check for the last song
 
         # Verify YouTube iframe (updated specific ID)
         print("Checking for YouTube iframe...")
@@ -33,8 +34,18 @@ def test_homepage(page: Page):
         print("Checking for Gallery...")
         expect(page.locator("#gallery")).to_be_visible()
         # Should have 12 images (even if broken, the img tag exists)
-        # Note: We used unoptimized images so they are simple img tags
         expect(page.locator("#gallery img")).to_have_count(12)
+        # Verify at least one image has the correct .png extension in its src
+        # Note: Next.js Image component modifies src, but it should still contain the original filename or path
+        first_gallery_img = page.locator("#gallery img").first
+        expect(first_gallery_img).to_have_attribute("src", re.compile(r"gallery_01\.png"))
+
+        # Verify Contact Section (Updated)
+        print("Checking for Contact Section...")
+        expect(page.locator("#contact")).to_be_visible()
+        # expect(page.get_by_role("link", name="info@thug-angel.ch")).to_be_visible()
+        expect(page.locator("a[href='mailto:info@thug-angel.ch']")).to_be_visible()
+        expect(page.locator("form")).not_to_be_visible() # Ensure form is gone
 
         # Verify Bio Image
         print("Checking for Bio Image...")
