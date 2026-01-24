@@ -12,7 +12,7 @@ export default function Contact() {
 
         <div className="flex flex-col items-center space-y-8">
             <p className="text-gray-300 text-lg md:text-xl text-center max-w-2xl">
-                {t('content') || "For bookings, features, and inquiries, please reach out directly via email."}
+                For bookings, features, and inquiries, please reach out directly via email.
             </p>
 
             <a
