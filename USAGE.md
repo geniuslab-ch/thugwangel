@@ -1,5 +1,10 @@
 # Thugwangel Website - User Instructions
 
+> **URGENT: MISSING IMAGES**
+> The gallery images (`gallery_01.png`, etc.) have been removed to allow you to upload your own.
+> You MUST upload your own `.png` images to `public/images/` and commit them to GitHub.
+> Until you do this, the website will show blank spaces or broken image icons for the gallery.
+
 ## Adding Your Media
 
 Since your previous upload might have failed due to file size limits (or because you are working in a different environment), please follow these instructions to manually add your files.
