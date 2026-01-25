@@ -131,14 +131,14 @@ export default async function HelpPage() {
              <p>Location: <code>public/images/</code></p>
              <p>Format: <strong>.png</strong></p>
              <ul className="list-disc pl-5 space-y-1 font-mono text-sm">
-                <li>gallery_01.png</li>
-                <li>gallery_02.png</li>
+                <li>pix_01.png</li>
+                <li>pix_02.png</li>
                 <li>...</li>
-                <li>gallery_12.png</li>
+                <li>pix_12.png</li>
              </ul>
 
              <h3 className="text-lg font-semibold text-white mt-4">Artist Image</h3>
-             <p>The Bio section uses <code>public/images/gallery_11.png</code>.</p>
+             <p>The Bio section uses <code>public/images/pix_11.png</code>.</p>
           </div>
         </section>
       </div>

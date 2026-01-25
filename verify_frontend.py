@@ -39,7 +39,7 @@ def test_homepage(page: Page):
         # Verify at least one image has the correct .png extension in its src
         # Note: Next.js Image component modifies src, but it should still contain the original filename or path
         first_gallery_img = page.locator("#gallery img").first
-        expect(first_gallery_img).to_have_attribute("src", re.compile(r"gallery_01\.png"))
+        expect(first_gallery_img).to_have_attribute("src", re.compile(r"pix_01\.png"))
 
         # Verify images actually load (naturalWidth > 0)
         # We wait for the first image to be visible
@@ -65,7 +65,7 @@ def test_homepage(page: Page):
         # Verify Bio image loads
         is_bio_loaded = bio_img.evaluate("img => img.naturalWidth > 0")
         if not is_bio_loaded:
-             raise Exception("Artist Bio image failed to load!")
+             raise Exception("Artist Bio image failed to load! Ensure pix_11.png exists.")
         print("Artist Bio image loaded successfully.")
 
         # Screenshot English

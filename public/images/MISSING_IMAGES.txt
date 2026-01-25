@@ -5,15 +5,15 @@ The website is currently reporting 404 errors because the following files are mi
 Please add these specific files to this folder (public/images/):
 
 1. Gallery Images (Used in Hero background, Bio section, and Gallery slider):
-   gallery_01.png
-   gallery_02.png
-   gallery_03.png
-   gallery_04.png
-   gallery_05.png
-   gallery_06.png
-   gallery_07.png
-   gallery_11.png
-   gallery_12.png
+   pix_01.png
+   pix_02.png
+   pix_03.png
+   pix_04.png
+   pix_05.png
+   pix_06.png
+   pix_07.png
+   pix_11.png
+   pix_12.png
 
 (Note: Images 08, 09, 10 are currently skipped by the gallery code, but it's safe to include them).
 

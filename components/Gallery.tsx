@@ -14,7 +14,7 @@ export default function Gallery() {
   const excludedIds = [8, 9, 10];
   const images = Array.from({ length: 12 }, (_, i) => ({
     id: i + 1,
-    src: `/images/gallery_${String(i + 1).padStart(2, '0')}.png`,
+    src: `/images/pix_${String(i + 1).padStart(2, '0')}.png`,
     alt: `Thugwangel Gallery Image ${i + 1}`
   })).filter(img => !excludedIds.includes(img.id));
 

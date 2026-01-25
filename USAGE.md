@@ -1,9 +1,9 @@
 # Thugwangel Website - User Instructions
 
 > **URGENT: IMAGE UPDATE**
-> To fix the missing images, I have temporarily filled the gallery with copies of your `artist.png`.
-> The website should now show images everywhere.
-> **ACTION REQUIRED:** You must replace these duplicate files (`gallery_01.png` to `gallery_12.png`) with your real photos by overwriting them in the `public/images/` folder and pushing to GitHub.
+> I have renamed the required images to match your new naming convention: `pix_01.png`, `pix_02.png`, etc.
+> I have temporarily filled these with copies of `artist.png` to prevent errors.
+> **ACTION REQUIRED:** You must replace these duplicate files (`pix_01.png` to `pix_12.png`) with your real photos by overwriting them in the `public/images/` folder and pushing to GitHub.
 
 ## Adding Your Media
 
