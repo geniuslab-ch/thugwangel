@@ -44,13 +44,12 @@ def test_homepage(page: Page):
         # Verify images actually load (naturalWidth > 0)
         # We wait for the first image to be visible
         expect(first_gallery_img).to_be_visible()
-        # Note: We expect this to fail or be 0 if the user hasn't uploaded images yet.
-        # We will just print a warning instead of failing the script, to allow deployment.
+        # Verify images actually load (naturalWidth > 0)
+        expect(first_gallery_img).to_be_visible()
         is_loaded = first_gallery_img.evaluate("img => img.naturalWidth > 0")
         if not is_loaded:
-             print("WARNING: Gallery image is present but failed to load (naturalWidth == 0). This is expected if images are missing.")
-        else:
-             print("Gallery images are loading correctly.")
+             raise Exception("Gallery image failed to load even after populating with artist.png!")
+        print("Gallery images are loading correctly.")
 
         # Verify Contact Section (Updated)
         print("Checking for Contact Section...")
@@ -66,9 +65,8 @@ def test_homepage(page: Page):
         # Verify Bio image loads
         is_bio_loaded = bio_img.evaluate("img => img.naturalWidth > 0")
         if not is_bio_loaded:
-             print("WARNING: Artist Bio image failed to load. Ensure 'gallery_11.png' is uploaded.")
-        else:
-             print("Artist Bio image loaded successfully.")
+             raise Exception("Artist Bio image failed to load!")
+        print("Artist Bio image loaded successfully.")
 
         # Screenshot English
         if not os.path.exists("verification"):

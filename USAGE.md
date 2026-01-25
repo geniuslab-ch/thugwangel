@@ -1,9 +1,9 @@
 # Thugwangel Website - User Instructions
 
-> **URGENT: MISSING IMAGES**
-> The gallery images (`gallery_01.png`, etc.) have been removed to allow you to upload your own.
-> You MUST upload your own `.png` images to `public/images/` and commit them to GitHub.
-> Until you do this, the website will show blank spaces or broken image icons for the gallery.
+> **URGENT: IMAGE UPDATE**
+> To fix the missing images, I have temporarily filled the gallery with copies of your `artist.png`.
+> The website should now show images everywhere.
+> **ACTION REQUIRED:** You must replace these duplicate files (`gallery_01.png` to `gallery_12.png`) with your real photos by overwriting them in the `public/images/` folder and pushing to GitHub.
 
 ## Adding Your Media
 
