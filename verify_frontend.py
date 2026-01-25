@@ -61,7 +61,14 @@ def test_homepage(page: Page):
 
         # Verify Bio Image
         print("Checking for Bio Image...")
-        expect(page.locator("img[alt='Thugwangel']")).to_be_visible()
+        bio_img = page.locator("img[alt='Thugwangel']")
+        expect(bio_img).to_be_visible()
+        # Verify Bio image loads
+        is_bio_loaded = bio_img.evaluate("img => img.naturalWidth > 0")
+        if not is_bio_loaded:
+             print("WARNING: Artist Bio image failed to load. Ensure 'gallery_11.png' is uploaded.")
+        else:
+             print("Artist Bio image loaded successfully.")
 
         # Screenshot English
         if not os.path.exists("verification"):

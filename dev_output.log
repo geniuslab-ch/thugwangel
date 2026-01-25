@@ -11,3 +11,8 @@
 ⨯ Unable to acquire lock at /app/.next/dev/lock, is another instance of next dev running?
   Suggestion: If you intended to restart next dev, terminate the other process, and then try again.
 [?25h
+npm notice
+npm notice New minor version of npm available! 11.7.0 -> 11.8.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.8.0
+npm notice To update run: npm install -g npm@11.8.0
+npm notice

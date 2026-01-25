@@ -1,7 +1,34 @@
 import React from 'react';
 import Link from 'next/link';
+import fs from 'fs';
+import path from 'path';
 
-export default function HelpPage() {
+export default async function HelpPage() {
+  // Server-side logic to check files
+  let fileStatus = {
+    images: [] as string[],
+    music: [] as string[],
+    root: [] as string[]
+  };
+
+  try {
+    const imagesDir = path.join(process.cwd(), 'public', 'images');
+    if (fs.existsSync(imagesDir)) {
+      fileStatus.images = fs.readdirSync(imagesDir);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+
+  try {
+    const musicDir = path.join(process.cwd(), 'public', 'music');
+    if (fs.existsSync(musicDir)) {
+      fileStatus.music = fs.readdirSync(musicDir);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] p-8 font-sans pt-32">
       <div className="max-w-4xl mx-auto space-y-12">
@@ -11,6 +38,45 @@ export default function HelpPage() {
             Back to Home
           </Link>
         </div>
+
+        {/* Debug Section */}
+        <section className="space-y-6">
+            <h2 className="text-2xl font-bold text-red-500 border-b border-red-900 pb-2">DEBUG: Server File Check</h2>
+            <div className="bg-black/60 p-6 rounded border border-red-900/50 space-y-4 text-gray-300 font-mono text-sm">
+                <p className="text-white font-sans">
+                    This section lists the files actually present on the server. If your file is not listed here,
+                    it means it was not successfully pushed to GitHub or deployed.
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div className="border border-white/10 p-4 rounded">
+                        <h3 className="font-bold text-accent mb-2">public/images/ ({fileStatus.images.length})</h3>
+                        {fileStatus.images.length > 0 ? (
+                            <ul className="list-disc pl-4 space-y-1 text-green-400">
+                                {fileStatus.images.map(f => (
+                                    <li key={f}>{f}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p className="text-red-500">Directory empty or missing!</p>
+                        )}
+                    </div>
+
+                    <div className="border border-white/10 p-4 rounded">
+                        <h3 className="font-bold text-accent mb-2">public/music/ ({fileStatus.music.length})</h3>
+                        {fileStatus.music.length > 0 ? (
+                            <ul className="list-disc pl-4 space-y-1 text-green-400">
+                                {fileStatus.music.map(f => (
+                                    <li key={f}>{f}</li>
+                                ))}
+                            </ul>
+                        ) : (
+                            <p className="text-red-500">Directory empty or missing!</p>
+                        )}
+                    </div>
+                </div>
+            </div>
+        </section>
 
         {/* Deployment Section */}
         <section className="space-y-6">
@@ -63,16 +129,16 @@ export default function HelpPage() {
 
              <h3 className="text-lg font-semibold text-white mt-4">Gallery (12 Images)</h3>
              <p>Location: <code>public/images/</code></p>
-             <p>Format: <strong>.jpeg</strong> (or .jpg, verify extension!)</p>
+             <p>Format: <strong>.png</strong></p>
              <ul className="list-disc pl-5 space-y-1 font-mono text-sm">
-                <li>gallery_01.jpeg</li>
-                <li>gallery_02.jpeg</li>
+                <li>gallery_01.png</li>
+                <li>gallery_02.png</li>
                 <li>...</li>
-                <li>gallery_12.jpeg</li>
+                <li>gallery_12.png</li>
              </ul>
 
              <h3 className="text-lg font-semibold text-white mt-4">Artist Image</h3>
-             <p>Location: <code>public/images/artist.png</code></p>
+             <p>The Bio section uses <code>public/images/gallery_11.png</code>.</p>
           </div>
         </section>
       </div>

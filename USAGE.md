@@ -39,8 +39,10 @@ Rename them exactly as follows:
 (Note: The gallery component specifically looks for `.png` extensions. If you use `.jpg`, you will need to update `components/Gallery.tsx`).
 
 ### 3. Artist Bio Image
-Place your main artist photo in `public/images/` and name it:
-- `artist.png`
+The Bio section now uses one of the gallery images:
+- `gallery_11.png`
+
+(Note: The file `artist.png` is no longer used by the website code, but you can keep it as a backup).
 
 ---
 
