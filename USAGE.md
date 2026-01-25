@@ -64,3 +64,19 @@ If you have downloaded the code to your computer to make changes:
 - **Videos:** Updated the Videos section with the 4 YouTube links you provided.
 - **Gallery:** Added a new "Gallery" section to the homepage and navigation.
 - **Music:** Configured the player to look for 11 songs.
+
+---
+
+## Troubleshooting 404 Errors
+
+### 1. "404 Not Found" on the Domain
+If your domain `thug-angel.ch` shows a 404 error:
+- **Vercel:** Ensure you have added the domain in the Vercel Dashboard (Settings > Domains).
+- **GitHub Pages:** If you are using GitHub Pages, you must create a file named `CNAME` in the `public/` folder containing just `thug-angel.ch`.
+
+### 2. Missing Images (404 on specific files)
+If you see errors like `Failed to load resource... gallery_06.png`:
+- You must **upload the actual image files** to the `public/images/` folder.
+- They must be `.png` files.
+- You must **commit and push** them to GitHub.
+- See `public/images/MISSING_IMAGES.txt` for the full list.

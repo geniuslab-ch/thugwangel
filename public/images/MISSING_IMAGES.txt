@@ -1,0 +1,25 @@
+REQUIRED IMAGES LIST
+====================
+
+The website is currently reporting 404 errors because the following files are missing from this folder.
+Please add these specific files to this folder (public/images/):
+
+1. artist.png  (Used in Bio section)
+
+2. Gallery Images (Used in Hero background and Gallery slider):
+   gallery_01.png
+   gallery_02.png
+   gallery_03.png
+   gallery_04.png
+   gallery_05.png
+   gallery_06.png
+   gallery_07.png
+   gallery_11.png
+   gallery_12.png
+
+(Note: Images 08, 09, 10 are currently skipped by the gallery code, but it's safe to include them).
+
+IMPORTANT:
+- Files must be .png (not .jpg or .jpeg)
+- Filenames must match exactly (case-sensitive)
+- You must COMMIT these files to git for them to appear on the live site.
