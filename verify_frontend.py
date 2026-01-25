@@ -41,6 +41,14 @@ def test_homepage(page: Page):
         first_gallery_img = page.locator("#gallery img").first
         expect(first_gallery_img).to_have_attribute("src", re.compile(r"gallery_01\.png"))
 
+        # Verify images actually load (naturalWidth > 0)
+        # We wait for the first image to be visible
+        expect(first_gallery_img).to_be_visible()
+        is_loaded = first_gallery_img.evaluate("img => img.naturalWidth > 0")
+        if not is_loaded:
+             raise Exception("Gallery image failed to load (naturalWidth == 0)")
+        print("Gallery images are loading correctly.")
+
         # Verify Contact Section (Updated)
         print("Checking for Contact Section...")
         expect(page.locator("#contact")).to_be_visible()

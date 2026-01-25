@@ -124,3 +124,5 @@ Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for loca
  GET /images/gallery_04.png 404 in 308ms (compile: 18ms, render: 290ms)
  GET /images/gallery_07.png 404 in 311ms (compile: 88ms, render: 223ms)
  GET /images/gallery_05.png 404 in 314ms (compile: 135ms, render: 179ms)
+ GET /en 200 in 1819ms (compile: 547ms, proxy.ts: 207ms, render: 1066ms)
+ GET /en 200 in 419ms (compile: 53ms, proxy.ts: 19ms, render: 348ms)
