@@ -1,0 +1,17 @@
+DEBUG REPORT
+============
+
+1. Git History Analysis:
+   - I checked the entire history of the 'public/images/' folder.
+   - The ONLY file that has ever been committed is 'artist.png'.
+   - 'gallery_01.png', etc., have NEVER been in the git repository (except for the placeholders I created and deleted).
+
+2. Conclusion:
+   - The user likely saw the images "yesterday" on their LOCAL machine (localhost) where the files existed.
+   - They successfully pushed the code changes but FAILED to push the actual image files.
+   - This is a common issue with git if files are ignored or just not added.
+
+3. Action Required:
+   - I cannot restore files that were never pushed.
+   - I must re-iterate (perhaps in a new way) that the user must ADD the files.
+   - I will check .gitignore one last time to make sure they aren't being ignored by accident.
