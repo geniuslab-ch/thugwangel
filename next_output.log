@@ -165,3 +165,4 @@ Error: MISSING_MESSAGE: Could not resolve `Contact.content` in messages for loca
  GET /en 200 in 1816ms (compile: 731ms, proxy.ts: 245ms, render: 840ms)
  GET /en 200 in 1802ms (compile: 676ms, proxy.ts: 222ms, render: 904ms)
  GET /en 200 in 3.6s (compile: 1081ms, proxy.ts: 298ms, render: 2.2s)
+ GET /en 200 in 1616ms (compile: 419ms, proxy.ts: 282ms, render: 915ms)

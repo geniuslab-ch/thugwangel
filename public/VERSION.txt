@@ -1,0 +1,6 @@
+Version: 2.0 (Pix Filenames + Placeholders)
+Build Date: Current
+Active Branch: support-pix-filenames-and-placeholders
+
+If you are reading this file on your live website (thug-angel.ch/VERSION.txt), you are viewing the correct deployment.
+If this file is missing or says an older version, you are deploying the wrong branch.

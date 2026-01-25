@@ -15,6 +15,17 @@ This application is built with **Next.js**. The easiest way to deploy it is usin
 5.  Click **"Deploy"**.
 
 ### Step 3: Connect Custom Domain (`thug-angel.ch`)
+
+### IMPORTANT: Check Your Branch / Vérifiez Votre Branche
+If you don't see your changes (like the new images), check which **Git Branch** Vercel is deploying.
+- You might be deploying an old branch (e.g., `fix-404-domain-issue...`).
+- You SHOULD deploy the latest branch (e.g., `support-pix-filenames-and-placeholders`).
+
+**To fix this:**
+1.  Merge the Pull Request into `main`.
+2.  OR Go to Vercel Dashboard > Project > Settings > Git and change "Production Branch".
+3.  Check `thug-angel.ch/VERSION.txt` to see which version is live.
+
 1.  Once deployed, go to the project **Settings** > **Domains**.
 2.  Enter `thug-angel.ch` in the input field and click **Add**.
 3.  Vercel will provide you with DNS records (usually an **A Record** or **CNAME**).
