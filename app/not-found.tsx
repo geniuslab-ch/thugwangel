@@ -1,27 +1,20 @@
 import Link from 'next/link';
+import './globals.css';
 
 export default function GlobalNotFound() {
   return (
-    <div className="bg-black text-white min-h-[60vh] flex flex-col items-center justify-center p-4">
-        <div className="text-center space-y-6 max-w-md">
-            <h1 className="text-6xl font-bold text-burgundy">404</h1>
-            <h2 className="text-2xl font-semibold">Page Not Found / Page Non Trouvée</h2>
-            <p className="text-gray-400">
-              The page you are looking for does not exist.
-            </p>
-            <p className="text-gray-500 text-sm italic">
-              La page que vous recherchez n&apos;existe pas.
-            </p>
-
-            <div className="pt-8">
-              <Link
-                href="/"
-                className="inline-block px-8 py-3 bg-burgundy hover:bg-red-900 text-white rounded-full transition-colors duration-300 font-medium"
-              >
-                Return Home / Retour à l&apos;accueil
-              </Link>
-            </div>
-        </div>
-    </div>
+    <html lang="en">
+      <body style={{background: '#07060a', color: '#f1ece4', fontFamily: 'system-ui, sans-serif'}}>
+        <main style={{minHeight: '100svh', display: 'grid', placeItems: 'center', textAlign: 'center', padding: '2rem'}}>
+          <div>
+            <p style={{fontSize: '6rem', fontWeight: 900, margin: 0, color: '#9d5cff'}}>404</p>
+            <p style={{margin: '0 0 2rem'}}>Lost in the night. / Perdu·e dans la nuit.</p>
+            <Link href="/" style={{background: '#9d5cff', color: '#07060a', padding: '1rem 2rem', borderRadius: 999, fontWeight: 700, textDecoration: 'none', letterSpacing: '.15em', textTransform: 'uppercase', fontSize: 14}}>
+              Kyx-Nyx →
+            </Link>
+          </div>
+        </main>
+      </body>
+    </html>
   );
 }

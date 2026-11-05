@@ -1,28 +1,193 @@
 {
-  "Navigation": {
-    "home": "Home",
-    "bio": "Bio",
+  "Meta": {
+    "homeTitle": "Kyx-Nyx — Female Rap Artist in Switzerland | English Melodic Rap",
+    "homeDescription": "Kyx-Nyx (formerly Thug-W-Angel) is an independent female rapper based in Switzerland. Dark, melodic, cinematic English rap — available for festivals, clubs and events.",
+    "bookingTitle": "Book Kyx-Nyx — Rapper for Festivals, Clubs & Events in Switzerland",
+    "bookingDescription": "Looking for a female rap artist for your festival, club night, showcase, private or corporate event in Switzerland? Send a booking request to Kyx-Nyx.",
+    "epkTitle": "Kyx-Nyx Press Kit (EPK) — Bio, Photos & Booking Contact",
+    "epkDescription": "Electronic press kit of Kyx-Nyx, English-language female rap artist based in Switzerland: short and long bio, press photos, key facts and booking contact.",
+    "ogAlt": "Kyx-Nyx — female rap artist based in Switzerland"
+  },
+  "Nav": {
+    "about": "About",
     "music": "Music",
     "videos": "Videos",
     "gallery": "Gallery",
-    "contact": "Contact"
+    "live": "Live",
+    "book": "Book",
+    "bookLong": "Book Kyx-Nyx",
+    "epk": "Press kit",
+    "menu": "Menu",
+    "close": "Close",
+    "language": "Language",
+    "home": "Home",
+    "skip": "Skip to content"
   },
   "Hero": {
-    "tagline": "International Rap Artist based in Switzerland"
+    "eyebrow": "Female rap artist · Switzerland",
+    "tagline": "Dark, melodic, cinematic rap — in English.",
+    "aka": "formerly Thug-W-Angel",
+    "ctaBook": "Book a live show",
+    "ctaListen": "Listen now",
+    "available": "Available for bookings across Switzerland"
   },
-  "Bio": {
-    "title": "Biography",
-    "content": "Thugwangel brings a unique sound from the heart of Switzerland to the world. Rapping in English, his international style blends deep beats with lyrical prowess.",
-    "extra": "Born in the mountains, raised on the beats. Thugwangel represents the new wave of Swiss hip-hop, breaking barriers with English lyrics that resonate globally."
+  "About": {
+    "kicker": "01 — About",
+    "title": "A new name. The same night-time voice.",
+    "p1": "Kyx-Nyx is an independent female rap artist based in Switzerland. She writes and performs in English, moving between sharp rap verses and sung, melodic hooks.",
+    "p2": "Her sound is dark, emotional and cinematic: night music built on heavy beats, atmosphere and vulnerability. Previously known as Thug-W-Angel (TwA), she now steps forward as Kyx-Nyx.",
+    "p3": "On stage she brings that intensity to festivals, clubs, showcases, cultural events and private occasions — in every Swiss language region.",
+    "factGenre": "Genre",
+    "factGenreValue": "Melodic rap · Alternative hip-hop",
+    "factBase": "Based in",
+    "factBaseValue": "Switzerland",
+    "factLang": "Lyrics",
+    "factLangValue": "English",
+    "factStatus": "Status",
+    "factStatusValue": "Independent · Open for bookings"
   },
-  "Contact": {
-    "title": "Get in Touch",
-    "name": "Name",
+  "Music": {
+    "kicker": "02 — Music",
+    "title": "Press play after dark.",
+    "intro": "Eleven tracks, streamed straight from the source.",
+    "playlist": "Tracklist",
+    "nowPlaying": "Now playing",
+    "play": "Play",
+    "pause": "Pause",
+    "next": "Next track",
+    "prev": "Previous track",
+    "mute": "Mute",
+    "unmute": "Unmute",
+    "seek": "Seek"
+  },
+  "Videos": {
+    "kicker": "03 — Videos",
+    "title": "Visuals",
+    "play": "Play video",
+    "label": "Video",
+    "channel": "More on YouTube"
+  },
+  "Gallery": {
+    "kicker": "04 — Gallery",
+    "title": "In frame",
+    "swipe": "Swipe"
+  },
+  "Live": {
+    "kicker": "05 — Live",
+    "title": "Bring Kyx-Nyx to your stage.",
+    "intro": "Festival line-up, club night, opening slot or private event: the set is shaped around your audience and your format.",
+    "events": {
+      "festival": {"title": "Festivals", "text": "Open-air and indoor festivals — main stage or discovery stage."},
+      "club": {"title": "Clubs & nightlife", "text": "Hip-hop nights, live sets and club shows."},
+      "showcase": {"title": "Showcases & openings", "text": "Showcases, support slots and opening acts."},
+      "cultural": {"title": "Cultural events", "text": "Youth centres, cultural venues, city events."},
+      "private": {"title": "Private events", "text": "Birthdays, parties and private celebrations."},
+      "corporate": {"title": "Corporate events", "text": "Brand activations, launches and company events."}
+    },
+    "cta": "Request a booking quote",
+    "ctaEpk": "Download the press kit"
+  },
+  "Booking": {
+    "h1": "Book Kyx-Nyx for your event in Switzerland",
+    "intro": "Kyx-Nyx is a female rap artist based in Switzerland, performing in English. Tell us about your event — festival, club, showcase, cultural, private or corporate — and you will receive a reply with availability and conditions.",
+    "whyTitle": "Why programme Kyx-Nyx",
+    "why1Title": "A distinct female voice",
+    "why1Text": "Melodic, dark and cinematic rap that stands out in a line-up.",
+    "why2Title": "English lyrics",
+    "why2Text": "Understood across all Swiss language regions and by international audiences.",
+    "why3Title": "Direct contact",
+    "why3Text": "Independent artist — your request goes straight to the artist's team.",
+    "why4Title": "Format that fits",
+    "why4Text": "Set length and set-up adapted to your event and venue.",
+    "eventsTitle": "Event types",
+    "regionsTitle": "Where she performs",
+    "regionsText": "Everywhere in Switzerland — Romandie, German-speaking Switzerland and Ticino. Events abroad on request.",
+    "processTitle": "How booking works",
+    "step1": "Send your request with the form below.",
+    "step2": "Receive availability, conditions and technical needs.",
+    "step3": "Confirm the date — and get ready for the show.",
+    "formTitle": "Booking request",
+    "faqTitle": "Booking FAQ",
+    "faq": {
+      "q1": "Where can Kyx-Nyx perform?",
+      "a1": "Anywhere in Switzerland — Lausanne, Geneva, Fribourg, Neuchâtel, Valais, Bern, Zurich, Basel, Lugano and beyond. International dates on request.",
+      "q2": "In which language does she perform?",
+      "a2": "Her songs are written and performed in English.",
+      "q3": "What kinds of events?",
+      "a3": "Festivals, clubs, showcases, opening slots, cultural events, private parties and corporate events.",
+      "q4": "What should I include in my request?",
+      "a4": "Date, city and venue, type of event, expected audience and desired performance length. The more detail, the faster the reply.",
+      "q5": "Is there a press kit?",
+      "a5": "Yes — bio, photos and key facts are on the press kit page, ready for programmers and journalists."
+    }
+  },
+  "Form": {
+    "name": "Your name",
     "email": "Email",
-    "message": "Message",
-    "send": "Send Message"
+    "phone": "Phone (optional)",
+    "organisation": "Organisation / venue (optional)",
+    "eventName": "Event name",
+    "eventDate": "Event date",
+    "eventLocation": "City & venue",
+    "eventType": "Type of event",
+    "choose": "Choose…",
+    "audience": "Expected audience",
+    "audienceOptions": {"a": "Under 100", "b": "100–500", "c": "500–2,000", "d": "2,000+"},
+    "duration": "Performance length",
+    "durationPlaceholder": "e.g. 30 min, 45 min, 1 h",
+    "budget": "Budget (optional)",
+    "message": "Additional information",
+    "consent": "I agree that my details are used to answer this booking request.",
+    "submit": "Send booking request",
+    "sending": "Sending…",
+    "success": "Thank you — your request has been sent. You'll get a reply soon.",
+    "mailtoNote": "Your email app will open with the request pre-filled. Just press send.",
+    "error": "Something went wrong. Please email us directly:",
+    "required": "Required",
+    "types": {
+      "festival": "Festival",
+      "club": "Club / nightlife",
+      "showcase": "Showcase / opening slot",
+      "cultural": "Cultural event",
+      "private": "Private event",
+      "corporate": "Corporate event",
+      "other": "Other"
+    }
+  },
+  "Epk": {
+    "h1": "Kyx-Nyx — Electronic Press Kit",
+    "intro": "Everything programmers, journalists and partners need: bio, facts, photos and contact.",
+    "factsTitle": "Key facts",
+    "factName": "Artist name",
+    "factAka": "Also known as",
+    "factGenre": "Genre",
+    "factGenreValue": "Rap, melodic rap, alternative hip-hop",
+    "factBase": "Based in",
+    "factLang": "Language",
+    "factLangValue": "English",
+    "factContact": "Booking & press",
+    "shortTitle": "Short bio",
+    "short": "Kyx-Nyx is an independent female rap artist based in Switzerland. Writing and performing in English, she blends rap and singing into a dark, emotional and cinematic sound. Formerly known as Thug-W-Angel.",
+    "longTitle": "Bio",
+    "long1": "Kyx-Nyx is an independent female rap artist based in Switzerland. She writes and performs in English, moving between sharp rap verses and sung, melodic hooks.",
+    "long2": "Her music is dark, emotional and cinematic — night-time rap built on heavy beats, atmosphere and vulnerability. After releasing music as Thug-W-Angel (TwA), she now continues under the name Kyx-Nyx.",
+    "long3": "Kyx-Nyx performs live at festivals, clubs, showcases, cultural and private events across Switzerland.",
+    "photosTitle": "Press photos",
+    "photosNote": "High-resolution, free to use for press and event promotion about Kyx-Nyx.",
+    "download": "Download",
+    "copy": "Copy text",
+    "copied": "Copied",
+    "print": "Print / save as PDF",
+    "contactTitle": "Booking & press contact"
+  },
+  "Sticky": {
+    "text": "Booking open",
+    "cta": "Book Kyx-Nyx"
   },
   "Footer": {
-    "copyright": "All Rights Reserved."
+    "tagline": "Female rap artist · Switzerland · English lyrics",
+    "formerly": "Formerly Thug-W-Angel / TwA",
+    "rights": "All rights reserved.",
+    "booking": "Booking"
   }
 }

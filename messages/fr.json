@@ -1,28 +1,193 @@
 {
-  "Navigation": {
-    "home": "Accueil",
-    "bio": "Bio",
+  "Meta": {
+    "homeTitle": "Kyx-Nyx — Rappeuse en Suisse | Rap anglais mélodique",
+    "homeDescription": "Kyx-Nyx (anciennement Thug-W-Angel) est une rappeuse indépendante basée en Suisse. Rap en anglais, sombre, mélodique et cinématique — disponible pour festivals, clubs et événements.",
+    "bookingTitle": "Réserver Kyx-Nyx — Rappeuse pour festivals, clubs & événements en Suisse",
+    "bookingDescription": "Vous cherchez une artiste rap pour votre festival, soirée club, showcase, événement privé ou d'entreprise en Suisse romande ou ailleurs en Suisse ? Envoyez une demande de booking.",
+    "epkTitle": "Dossier de presse Kyx-Nyx (EPK) — Bio, photos & contact booking",
+    "epkDescription": "Dossier de presse de Kyx-Nyx, rappeuse anglophone basée en Suisse : bio courte et longue, photos presse, infos clés et contact booking.",
+    "ogAlt": "Kyx-Nyx — rappeuse basée en Suisse"
+  },
+  "Nav": {
+    "about": "Bio",
     "music": "Musique",
     "videos": "Vidéos",
     "gallery": "Galerie",
-    "contact": "Contact"
+    "live": "Live",
+    "book": "Booking",
+    "bookLong": "Réserver Kyx-Nyx",
+    "epk": "Dossier de presse",
+    "menu": "Menu",
+    "close": "Fermer",
+    "language": "Langue",
+    "home": "Accueil",
+    "skip": "Aller au contenu"
   },
   "Hero": {
-    "tagline": "Artiste Rap International basé en Suisse"
+    "eyebrow": "Rappeuse · Suisse",
+    "tagline": "Rap sombre, mélodique et cinématique — en anglais.",
+    "aka": "anciennement Thug-W-Angel",
+    "ctaBook": "Réserver un live",
+    "ctaListen": "Écouter",
+    "available": "Disponible pour des bookings dans toute la Suisse"
   },
-  "Bio": {
-    "title": "Biographie",
-    "content": "Thugwangel apporte un son unique du cœur de la Suisse au monde entier. Rappant en anglais, son style international mêle des rythmes profonds à une prouesse lyrique.",
-    "extra": "Né dans les montagnes, élevé aux rythmes. Thugwangel représente la nouvelle vague du hip-hop suisse, brisant les barrières avec des paroles en anglais qui résonnent mondialement."
+  "About": {
+    "kicker": "01 — Bio",
+    "title": "Un nouveau nom. La même voix nocturne.",
+    "p1": "Kyx-Nyx est une rappeuse indépendante basée en Suisse. Elle écrit et interprète en anglais, entre couplets rap tranchants et refrains chantés, mélodiques.",
+    "p2": "Son univers est sombre, émotionnel et cinématique : une musique de nuit, faite de beats lourds, d'atmosphère et de vulnérabilité. Connue auparavant sous le nom de Thug-W-Angel (TwA), elle avance désormais sous le nom de Kyx-Nyx.",
+    "p3": "Sur scène, elle apporte cette intensité aux festivals, clubs, showcases, événements culturels et privés — en Suisse romande, alémanique et italienne.",
+    "factGenre": "Genre",
+    "factGenreValue": "Rap mélodique · Hip-hop alternatif",
+    "factBase": "Basée en",
+    "factBaseValue": "Suisse",
+    "factLang": "Textes",
+    "factLangValue": "Anglais",
+    "factStatus": "Statut",
+    "factStatusValue": "Indépendante · Ouverte aux bookings"
   },
-  "Contact": {
-    "title": "Contactez-nous",
-    "name": "Nom",
-    "email": "Email",
-    "message": "Message",
-    "send": "Envoyer le message"
+  "Music": {
+    "kicker": "02 — Musique",
+    "title": "À écouter une fois la nuit tombée.",
+    "intro": "Onze titres, en écoute directe.",
+    "playlist": "Titres",
+    "nowPlaying": "En lecture",
+    "play": "Lecture",
+    "pause": "Pause",
+    "next": "Titre suivant",
+    "prev": "Titre précédent",
+    "mute": "Couper le son",
+    "unmute": "Rétablir le son",
+    "seek": "Position"
+  },
+  "Videos": {
+    "kicker": "03 — Vidéos",
+    "title": "Clips",
+    "play": "Lire la vidéo",
+    "label": "Vidéo",
+    "channel": "Plus sur YouTube"
+  },
+  "Gallery": {
+    "kicker": "04 — Galerie",
+    "title": "Images",
+    "swipe": "Faites glisser"
+  },
+  "Live": {
+    "kicker": "05 — Live",
+    "title": "Invitez Kyx-Nyx sur votre scène.",
+    "intro": "Line-up de festival, soirée club, première partie ou événement privé : le set s'adapte à votre public et à votre format.",
+    "events": {
+      "festival": {"title": "Festivals", "text": "Open air et festivals indoor — grande scène ou scène découverte."},
+      "club": {"title": "Clubs & soirées", "text": "Soirées hip-hop, live sets et concerts en club."},
+      "showcase": {"title": "Showcases & premières parties", "text": "Showcases, premières parties et ouvertures de soirée."},
+      "cultural": {"title": "Événements culturels", "text": "Centres de loisirs, salles culturelles, fêtes de ville."},
+      "private": {"title": "Événements privés", "text": "Anniversaires, fêtes et célébrations privées."},
+      "corporate": {"title": "Événements d'entreprise", "text": "Activations de marque, lancements, soirées d'entreprise."}
+    },
+    "cta": "Demander un devis",
+    "ctaEpk": "Télécharger le dossier de presse"
+  },
+  "Booking": {
+    "h1": "Réserver Kyx-Nyx pour votre événement en Suisse",
+    "intro": "Kyx-Nyx est une rappeuse basée en Suisse qui se produit en anglais. Décrivez votre événement — festival, club, showcase, culturel, privé ou d'entreprise — et vous recevrez une réponse avec disponibilités et conditions.",
+    "whyTitle": "Pourquoi programmer Kyx-Nyx",
+    "why1Title": "Une voix féminine singulière",
+    "why1Text": "Un rap mélodique, sombre et cinématique qui se démarque dans un line-up.",
+    "why2Title": "Textes en anglais",
+    "why2Text": "Compris dans toutes les régions linguistiques et par un public international.",
+    "why3Title": "Contact direct",
+    "why3Text": "Artiste indépendante — votre demande arrive directement à son équipe.",
+    "why4Title": "Un format sur mesure",
+    "why4Text": "Durée du set et configuration adaptées à votre événement et à votre lieu.",
+    "eventsTitle": "Types d'événements",
+    "regionsTitle": "Où elle se produit",
+    "regionsText": "Partout en Suisse — Suisse romande, Suisse alémanique et Tessin. Événements à l'étranger sur demande.",
+    "processTitle": "Comment se passe le booking",
+    "step1": "Envoyez votre demande via le formulaire ci-dessous.",
+    "step2": "Recevez disponibilités, conditions et besoins techniques.",
+    "step3": "Confirmez la date — et préparez la scène.",
+    "formTitle": "Demande de booking",
+    "faqTitle": "Questions fréquentes",
+    "faq": {
+      "q1": "Où Kyx-Nyx peut-elle se produire ?",
+      "a1": "Partout en Suisse — Lausanne, Genève, Fribourg, Neuchâtel, Valais, Berne, Zurich, Bâle, Lugano et ailleurs. Dates à l'international sur demande.",
+      "q2": "Dans quelle langue chante-t-elle ?",
+      "a2": "Ses morceaux sont écrits et interprétés en anglais.",
+      "q3": "Pour quels types d'événements ?",
+      "a3": "Festivals, clubs, showcases, premières parties, événements culturels, fêtes privées et événements d'entreprise.",
+      "q4": "Que dois-je indiquer dans ma demande ?",
+      "a4": "Date, ville et lieu, type d'événement, public attendu et durée souhaitée. Plus c'est précis, plus la réponse est rapide.",
+      "q5": "Existe-t-il un dossier de presse ?",
+      "a5": "Oui — bio, photos et infos clés sont disponibles sur la page dossier de presse, pour programmateurs et journalistes."
+    }
+  },
+  "Form": {
+    "name": "Votre nom",
+    "email": "E-mail",
+    "phone": "Téléphone (facultatif)",
+    "organisation": "Organisation / lieu (facultatif)",
+    "eventName": "Nom de l'événement",
+    "eventDate": "Date de l'événement",
+    "eventLocation": "Ville & lieu",
+    "eventType": "Type d'événement",
+    "choose": "Choisir…",
+    "audience": "Public attendu",
+    "audienceOptions": {"a": "Moins de 100", "b": "100–500", "c": "500–2 000", "d": "2 000+"},
+    "duration": "Durée de la prestation",
+    "durationPlaceholder": "ex. 30 min, 45 min, 1 h",
+    "budget": "Budget (facultatif)",
+    "message": "Informations complémentaires",
+    "consent": "J'accepte que mes données soient utilisées pour répondre à cette demande de booking.",
+    "submit": "Envoyer la demande",
+    "sending": "Envoi…",
+    "success": "Merci — votre demande a bien été envoyée. Vous recevrez une réponse rapidement.",
+    "mailtoNote": "Votre messagerie va s'ouvrir avec la demande pré-remplie. Il suffit de l'envoyer.",
+    "error": "Une erreur est survenue. Écrivez-nous directement :",
+    "required": "Obligatoire",
+    "types": {
+      "festival": "Festival",
+      "club": "Club / soirée",
+      "showcase": "Showcase / première partie",
+      "cultural": "Événement culturel",
+      "private": "Événement privé",
+      "corporate": "Événement d'entreprise",
+      "other": "Autre"
+    }
+  },
+  "Epk": {
+    "h1": "Kyx-Nyx — Dossier de presse",
+    "intro": "Tout ce dont programmateurs, journalistes et partenaires ont besoin : bio, infos clés, photos et contact.",
+    "factsTitle": "Infos clés",
+    "factName": "Nom d'artiste",
+    "factAka": "Aussi connue sous",
+    "factGenre": "Genre",
+    "factGenreValue": "Rap, rap mélodique, hip-hop alternatif",
+    "factBase": "Basée en",
+    "factLang": "Langue",
+    "factLangValue": "Anglais",
+    "factContact": "Booking & presse",
+    "shortTitle": "Bio courte",
+    "short": "Kyx-Nyx est une rappeuse indépendante basée en Suisse. Elle écrit et interprète en anglais, mêlant rap et chant dans un univers sombre, émotionnel et cinématique. Anciennement connue sous le nom de Thug-W-Angel.",
+    "longTitle": "Bio",
+    "long1": "Kyx-Nyx est une rappeuse indépendante basée en Suisse. Elle écrit et interprète en anglais, entre couplets rap tranchants et refrains chantés, mélodiques.",
+    "long2": "Sa musique est sombre, émotionnelle et cinématique — un rap nocturne fait de beats lourds, d'atmosphère et de vulnérabilité. Après avoir sorti sa musique sous le nom de Thug-W-Angel (TwA), elle poursuit désormais sous le nom de Kyx-Nyx.",
+    "long3": "Kyx-Nyx se produit en live dans les festivals, clubs, showcases, événements culturels et privés partout en Suisse.",
+    "photosTitle": "Photos presse",
+    "photosNote": "Haute résolution, libres d'utilisation pour la presse et la promotion d'événements avec Kyx-Nyx.",
+    "download": "Télécharger",
+    "copy": "Copier le texte",
+    "copied": "Copié",
+    "print": "Imprimer / enregistrer en PDF",
+    "contactTitle": "Contact booking & presse"
+  },
+  "Sticky": {
+    "text": "Booking ouvert",
+    "cta": "Réserver Kyx-Nyx"
   },
   "Footer": {
-    "copyright": "Tous droits réservés."
+    "tagline": "Rappeuse · Suisse · Textes en anglais",
+    "formerly": "Anciennement Thug-W-Angel / TwA",
+    "rights": "Tous droits réservés.",
+    "booking": "Booking"
   }
 }
