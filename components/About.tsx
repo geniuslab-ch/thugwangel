@@ -18,7 +18,7 @@ export default async function About() {
       <div className="mx-auto grid max-w-7xl gap-14 px-5 md:grid-cols-12 md:px-8">
         <div className="md:col-span-5 relative">
           <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] md:rounded-[3rem] rotate-[-2deg]">
-            <Image src={p.src} alt={p.alt} fill sizes="(max-width: 768px) 90vw, 40vw" className="object-cover object-[30%_30%]" />
+            <Image quality={60} src={p.src} alt={p.alt} fill sizes="(max-width: 768px) 90vw, 40vw" className="object-cover object-[30%_30%]" />
             <div className="absolute inset-0 ring-1 ring-inset ring-moon/10 rounded-[inherit]" />
           </div>
           <div aria-hidden className="absolute -bottom-6 -right-2 md:-right-8 rounded-full bg-moon px-5 py-3 font-display text-xs font-black uppercase tracking-widest text-night rotate-[6deg] animate-float">
@@ -36,7 +36,7 @@ export default async function About() {
           <dl className="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border border-line bg-line max-w-xl">
             {facts.map(([k, v]) => (
               <div key={k} className="bg-night p-4 md:p-5">
-                <dt className="text-[11px] uppercase tracking-[0.2em] text-violet">{k}</dt>
+                <dt className="text-xs uppercase tracking-[0.2em] text-violet">{k}</dt>
                 <dd className="mt-1 text-sm md:text-base font-semibold text-moon">{v}</dd>
               </div>
             ))}

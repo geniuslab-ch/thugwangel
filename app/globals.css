@@ -50,8 +50,8 @@
   50% { transform: scaleY(1); }
 }
 @keyframes rise {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(24px); }
+  to { transform: translateY(0); }
 }
 
 html {
@@ -107,7 +107,7 @@ input[type="range"].range {
   -webkit-appearance: none;
   appearance: none;
   background: transparent;
-  height: 24px;
+  height: 44px;
   cursor: pointer;
 }
 input[type="range"].range::-webkit-slider-runnable-track {

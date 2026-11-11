@@ -50,7 +50,7 @@ export default function Navigation() {
         style={{paddingTop: 'env(safe-area-inset-top)'}}
       >
         <div className="mx-auto flex h-16 md:h-20 max-w-7xl items-center justify-between px-5 md:px-8">
-          <Link href="/" className="font-display text-lg md:text-xl font-black tracking-tight" onClick={() => setOpen(false)} aria-label="Kyx-Nyx — home">
+          <Link href="/" className="inline-flex min-h-11 items-center font-display text-lg md:text-xl font-black tracking-tight" onClick={() => setOpen(false)} aria-label="Kyx-Nyx — home">
             KYX<span className="text-violet">—</span>NYX
           </Link>
 
@@ -69,7 +69,7 @@ export default function Navigation() {
                   key={l}
                   onClick={() => switchTo(l)}
                   aria-current={l === locale ? 'true' : undefined}
-                  className={`h-8 w-8 rounded-full text-[11px] font-bold uppercase transition-colors ${l === locale ? 'bg-moon text-night' : 'text-mist hover:text-moon'}`}
+                  className={`h-8 w-8 rounded-full text-xs font-bold uppercase transition-colors ${l === locale ? 'bg-moon text-night' : 'text-mist hover:text-moon'}`}
                 >
                   {l}
                 </button>
@@ -78,7 +78,7 @@ export default function Navigation() {
             <Link
               href="/booking"
               onClick={() => track('booking_cta_click', {location: 'nav'})}
-              className="rounded-full bg-violet px-5 py-2.5 text-[13px] font-bold uppercase tracking-[0.15em] text-night hover:bg-glow transition-colors"
+              className="inline-flex min-h-11 items-center rounded-full bg-violet px-5 text-[13px] font-bold uppercase tracking-[0.15em] text-night hover:bg-glow transition-colors"
             >
               {t('book')}
             </Link>
@@ -88,7 +88,7 @@ export default function Navigation() {
             <Link
               href="/booking"
               onClick={() => track('booking_cta_click', {location: 'nav_mobile'})}
-              className="rounded-full bg-violet px-4 py-2 text-xs font-bold uppercase tracking-[0.15em] text-night"
+              className="inline-flex min-h-11 items-center rounded-full bg-violet px-4 text-xs font-bold uppercase tracking-[0.15em] text-night"
             >
               {t('book')}
             </Link>

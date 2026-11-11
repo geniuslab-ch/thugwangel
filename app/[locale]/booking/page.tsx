@@ -42,7 +42,7 @@ export default async function BookingPage({params}: Props) {
       <section className="relative mx-auto max-w-7xl px-5 md:px-8 pb-16 md:pb-24 overflow-x-clip">
         <div aria-hidden className="pointer-events-none absolute -right-20 -top-10 h-96 w-96 rounded-full bg-violet/25 blur-[100px]" />
         <nav aria-label="Breadcrumb" className="mb-8 text-xs uppercase tracking-[0.2em] text-mist">
-          <Link href="/" className="hover:text-moon">{n('home')}</Link> <span className="mx-2 text-violet">/</span> <span className="text-moon">{n('book')}</span>
+          <Link href="/" className="inline-flex min-h-11 items-center hover:text-moon">{n('home')}</Link> <span className="mx-2 text-violet">/</span> <span className="text-moon">{n('book')}</span>
         </nav>
         <h1 className="relative max-w-5xl font-display text-[clamp(1.9rem,9vw,4.5rem)] leading-[0.98] hyphens-auto break-words font-black uppercase tracking-tight text-balance">
           {t('h1')}
@@ -103,9 +103,9 @@ export default async function BookingPage({params}: Props) {
           <div>
             <h2 id="form-title" className="font-display text-4xl md:text-5xl font-black uppercase">{t('formTitle')}</h2>
             <p className="mt-4 text-mist">{t('intro')}</p>
-            <a href={`mailto:${site.email}`} className="mt-6 inline-block break-all text-glow underline underline-offset-4">{site.email}</a>
+            <a href={`mailto:${site.email}`} className="mt-4 inline-flex min-h-11 items-center break-all text-glow underline underline-offset-4">{site.email}</a>
             <div className="mt-6">
-              <Link href="/press-kit" className="text-sm uppercase tracking-[0.18em] text-mist hover:text-moon">{n('epk')} →</Link>
+              <Link href="/press-kit" className="inline-flex min-h-11 items-center text-sm uppercase tracking-[0.18em] text-mist hover:text-moon">{n('epk')} →</Link>
             </div>
           </div>
           <BookingForm />
@@ -118,7 +118,7 @@ export default async function BookingPage({params}: Props) {
         <div className="divide-y divide-line border-y border-line">
           {faq.map((f, i) => (
             <details key={i} className="group py-5" open={i === 0}>
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold">
+              <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold">
                 {f.q}
                 <span className="text-2xl text-violet transition-transform group-open:rotate-45">+</span>
               </summary>

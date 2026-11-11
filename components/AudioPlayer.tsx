@@ -66,7 +66,7 @@ export default function AudioPlayer({tracks, artist}: {tracks: Track[]; artist: 
             <div className="absolute inset-[47%] rounded-full bg-night" />
           </div>
           <div className="min-w-0">
-            <p className="text-[11px] uppercase tracking-[0.25em] text-violet">{t('nowPlaying')} · {String(i + 1).padStart(2, '0')}/{tracks.length}</p>
+            <p className="text-xs uppercase tracking-[0.25em] text-violet">{t('nowPlaying')} · {String(i + 1).padStart(2, '0')}/{tracks.length}</p>
             <h3 className="mt-2 font-display text-xl md:text-3xl font-black uppercase leading-tight line-clamp-2 break-words">{current.title}</h3>
             <p className="mt-1 text-sm text-mist">{artist}</p>
           </div>
@@ -91,10 +91,10 @@ export default function AudioPlayer({tracks, artist}: {tracks: Track[]; artist: 
           <div className="mt-1 flex justify-between font-mono text-xs text-mist"><span>{fmt(time)}</span><span>{fmt(dur)}</span></div>
 
           <div className="mt-6 flex items-center justify-between">
-            <button onClick={() => setMuted(!muted)} aria-label={muted ? t('unmute') : t('mute')} className="h-11 w-11 rounded-full text-mist hover:text-moon text-lg">
+            <button onClick={() => setMuted(!muted)} aria-label={muted ? t('unmute') : t('mute')} className="h-11 w-11 shrink-0 rounded-full text-mist hover:text-moon text-lg">
               {muted ? '🔇' : '🔊'}
             </button>
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3 sm:gap-4">
               <button onClick={prev} aria-label={t('prev')} className="h-12 w-12 rounded-full border border-line text-moon hover:border-violet">
                 <svg viewBox="0 0 24 24" className="mx-auto h-5 w-5" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z" /></svg>
               </button>
@@ -107,14 +107,14 @@ export default function AudioPlayer({tracks, artist}: {tracks: Track[]; artist: 
                 <svg viewBox="0 0 24 24" className="mx-auto h-5 w-5" fill="currentColor"><path d="M16 5h2v14h-2zM4 5l11 7-11 7z" /></svg>
               </button>
             </div>
-            <span className="w-11" />
+            <span className="w-11 shrink-0" />
           </div>
         </div>
       </div>
 
       {/* Tracklist */}
       <div className="p-3 md:p-5">
-        <p className="px-3 pb-3 pt-2 text-[11px] uppercase tracking-[0.25em] text-mist">{t('playlist')}</p>
+        <p className="px-3 pb-3 pt-2 text-xs uppercase tracking-[0.25em] text-mist">{t('playlist')}</p>
         <ol className="max-h-[360px] md:max-h-[440px] overflow-y-auto no-scrollbar">
           {tracks.map((tr, n) => {
             const active = n === i;
@@ -124,7 +124,7 @@ export default function AudioPlayer({tracks, artist}: {tracks: Track[]; artist: 
                   onClick={() => (active ? toggle() : select(n))}
                   className={`flex w-full items-center gap-4 rounded-xl px-3 py-3.5 text-left transition-colors ${active ? 'bg-violet/15 text-moon' : 'text-mist hover:bg-moon/5 hover:text-moon'}`}
                 >
-                  <span className="w-6 font-mono text-xs opacity-60">{String(n + 1).padStart(2, '0')}</span>
+                  <span className="w-6 font-mono text-xs text-mist">{String(n + 1).padStart(2, '0')}</span>
                   <span className="flex-1 truncate font-semibold">{tr.title}</span>
                   {active && playing && (
                     <span className="flex h-4 items-end gap-[3px]" aria-hidden>

@@ -31,7 +31,7 @@ export default async function PressKit({params}: Props) {
     [t('factGenre'), t('factGenreValue')],
     [t('factBase'), a('factBaseValue')],
     [t('factLang'), t('factLangValue')],
-    [t('factContact'), <a key="e" href={`mailto:${site.email}`} className="text-glow underline underline-offset-4 break-all">{site.email}</a>]
+    [t('factContact'), <a key="e" href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center text-glow underline underline-offset-4 break-all">{site.email}</a>]
   ];
   const long = [t('long1'), t('long2'), t('long3')];
 
@@ -47,7 +47,7 @@ export default async function PressKit({params}: Props) {
       />
       <div className="mx-auto max-w-6xl px-5 md:px-8">
         <nav aria-label="Breadcrumb" className="no-print mb-8 text-xs uppercase tracking-[0.2em] text-mist">
-          <Link href="/" className="hover:text-moon">{n('home')}</Link> <span className="mx-2 text-violet">/</span> <span className="text-moon">{n('epk')}</span>
+          <Link href="/" className="inline-flex min-h-11 items-center hover:text-moon">{n('home')}</Link> <span className="mx-2 text-violet">/</span> <span className="text-moon">{n('epk')}</span>
         </nav>
 
         <header className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between border-b border-line pb-10">
@@ -100,7 +100,7 @@ export default async function PressKit({params}: Props) {
                 </div>
                 <figcaption className="flex items-center justify-between gap-4 p-4">
                   <span className="text-xs text-mist">© {site.name}</span>
-                  <a href={p.press} download className="no-print rounded-full bg-violet px-5 py-2.5 text-xs font-bold uppercase tracking-[0.15em] text-night hover:bg-glow">
+                  <a href={p.press} download className="no-print inline-flex min-h-11 items-center rounded-full bg-violet px-5 text-xs font-bold uppercase tracking-[0.15em] text-night hover:bg-glow">
                     {t('download')} ↓
                   </a>
                 </figcaption>
@@ -111,7 +111,7 @@ export default async function PressKit({params}: Props) {
 
         <section className="mt-20 rounded-[2rem] border border-violet/40 bg-violet/10 p-8 md:p-12 text-center">
           <h2 className="font-display text-2xl md:text-4xl font-black uppercase">{t('contactTitle')}</h2>
-          <a href={`mailto:${site.email}`} className="mt-4 inline-block text-xl md:text-2xl text-glow underline underline-offset-4 break-all">{site.email}</a>
+          <a href={`mailto:${site.email}`} className="mt-4 inline-flex min-h-11 items-center text-xl md:text-2xl text-glow underline underline-offset-4 break-all">{site.email}</a>
           <div className="no-print mt-8">
             <Link href="/booking" className="inline-flex rounded-full bg-violet px-8 py-4 text-sm font-bold uppercase tracking-[0.18em] text-night hover:bg-glow">{n('bookLong')} →</Link>
           </div>
