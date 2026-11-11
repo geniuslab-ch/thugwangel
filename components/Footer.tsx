@@ -17,21 +17,21 @@ export default async function Footer() {
           <div>
             <p className="font-display font-black text-lg">KYX<span className="text-violet">—</span>NYX</p>
             <p className="mt-2 text-sm text-mist">{t('tagline')}</p>
-            <p className="mt-1 text-xs text-mist/70">{t('formerly')}</p>
+            <p className="mt-1 text-xs text-mist">{t('formerly')}</p>
           </div>
           <div className="text-sm">
             <p className="mb-3 text-xs uppercase tracking-[0.2em] text-violet">{t('booking')}</p>
-            <a href={`mailto:${site.email}`} className="text-moon hover:text-glow break-all">{site.email}</a>
-            <div className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-mist">
-              <Link href="/booking" className="hover:text-moon">{n('bookLong')}</Link>
-              <Link href="/press-kit" className="hover:text-moon">{n('epk')}</Link>
+            <a href={`mailto:${site.email}`} className="inline-flex min-h-11 items-center text-moon hover:text-glow break-all">{site.email}</a>
+            <div className="mt-2 flex flex-wrap gap-x-5 text-mist">
+              <Link href="/booking" className="inline-flex min-h-11 items-center hover:text-moon">{n('bookLong')}</Link>
+              <Link href="/press-kit" className="inline-flex min-h-11 items-center hover:text-moon">{n('epk')}</Link>
             </div>
           </div>
           {site.socials.length > 0 && (
             <ul className="flex flex-wrap gap-3 md:justify-end self-start">
               {site.socials.map((s) => (
                 <li key={s.url}>
-                  <a href={s.url} target="_blank" rel="noopener me" className="inline-block rounded-full border border-line px-4 py-2 text-xs uppercase tracking-[0.15em] text-mist hover:text-moon hover:border-violet">
+                  <a href={s.url} target="_blank" rel="noopener me" className="inline-flex min-h-11 items-center rounded-full border border-line px-4 text-xs uppercase tracking-[0.15em] text-mist hover:text-moon hover:border-violet">
                     {s.label}
                   </a>
                 </li>
@@ -39,7 +39,7 @@ export default async function Footer() {
             </ul>
           )}
         </div>
-        <p className="mt-10 text-xs text-mist/60">© {year} {site.name}. {t('rights')}</p>
+        <p className="mt-10 text-xs text-mist">© {year} {site.name}. {t('rights')}</p>
       </div>
     </footer>
   );

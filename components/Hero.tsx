@@ -11,6 +11,7 @@ export default async function Hero() {
       {/* portrait, duotone */}
       <div className="absolute inset-0 md:left-[38%]">
         <Image
+          quality={60}
           src={site.portrait}
           alt="Kyx-Nyx — female rap artist based in Switzerland"
           fill
@@ -30,15 +31,15 @@ export default async function Hero() {
       </div>
 
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-end px-5 pb-14 pt-28 md:px-8 md:pb-20">
-        <p className="reveal mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-line bg-night/40 px-4 py-2 text-[11px] font-bold uppercase tracking-[0.25em] text-moon backdrop-blur">
+        <p className="reveal mb-5 inline-flex w-fit items-center gap-3 rounded-full border border-line bg-night/40 px-4 py-2 text-xs font-bold uppercase tracking-[0.25em] text-moon backdrop-blur">
           <span className="h-1.5 w-1.5 rounded-full bg-ember" />
           {t('eyebrow')}
         </p>
 
         <h1 className="reveal font-display font-black uppercase leading-[0.82] tracking-[-0.04em]" style={{animationDelay: '120ms'}}>
           <span className="sr-only">Kyx-Nyx — </span>
-          <span aria-hidden className="block text-[26vw] md:text-[13vw] lg:text-[11.5rem]">Kyx</span>
-          <span aria-hidden className="block text-[26vw] md:text-[13vw] lg:text-[11.5rem] text-outline pl-[8vw] md:pl-[6vw]">Nyx</span>
+          <span aria-hidden className="block text-[min(26vw,22svh)] md:text-[min(13vw,22svh)] lg:text-[min(11.5rem,22svh)]">Kyx</span>
+          <span aria-hidden className="block text-[min(26vw,22svh)] md:text-[min(13vw,22svh)] lg:text-[min(11.5rem,22svh)] text-outline pl-[8vw] md:pl-[6vw]">Nyx</span>
           <span className="sr-only">{t('eyebrow')}</span>
         </h1>
 

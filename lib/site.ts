@@ -19,7 +19,7 @@ export const site = {
    * (key signal for Google's Knowledge Graph). Leave empty rather than guess.
    */
   socials: [
-    // { label: 'Instagram', url: 'https://www.instagram.com/kyx_nyx?srtk=aWxqbHU0cGEycThk&utm_source=qr' },
+    { label: 'Instagram', url: 'https://www.instagram.com/kyx_nyx/' },
     // { label: 'Spotify', url: 'https://open.spotify.com/artist/…' },
     // { label: 'YouTube', url: 'https://www.youtube.com/@…' },
   ] as {label: string; url: string}[],

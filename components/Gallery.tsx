@@ -17,7 +17,7 @@ export default async function Gallery() {
       <div className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 md:px-[max(2rem,calc((100vw-80rem)/2+2rem))] pb-4">
         {photos.map((p, n) => (
           <figure key={p.src} className={`relative shrink-0 snap-center overflow-hidden rounded-3xl ${p.h > p.w ? 'w-[78vw] md:w-[30rem] aspect-[2/3]' : 'w-[86vw] md:w-[40rem] aspect-square'}`}>
-            <Image src={p.src} alt={p.alt} fill sizes="(max-width: 768px) 86vw, 40rem" className="object-cover" />
+            <Image quality={60} src={p.src} alt={p.alt} fill sizes="(max-width: 768px) 86vw, 40rem" className="object-cover" />
             <figcaption className="absolute bottom-4 left-5 font-mono text-xs text-moon/80">KYX—NYX / {String(n + 1).padStart(2, '0')}</figcaption>
           </figure>
         ))}

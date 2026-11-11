@@ -116,8 +116,8 @@ export default function BookingForm() {
       <div><L htmlFor="phone">{t('phone')}</L><input id="phone" name="phone" type="tel" autoComplete="tel" inputMode="tel" className="field" /></div>
       <div className="sm:col-span-2"><L htmlFor="message">{t('message')}</L><textarea id="message" name="message" rows={5} className="field resize-y" /></div>
 
-      <label className="sm:col-span-2 flex items-start gap-3 text-sm text-mist">
-        <input type="checkbox" required className="mt-1 h-5 w-5 accent-[var(--violet)]" />
+      <label className="sm:col-span-2 flex min-h-11 cursor-pointer items-start gap-3 py-2 text-sm text-mist">
+        <input type="checkbox" required className="mt-0.5 h-6 w-6 shrink-0 accent-[var(--violet)]" />
         <span>{t('consent')}</span>
       </label>
 
